@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icon.ico" type="image/x-icon">
+    <style>
+        article#grande{
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+    <title>Outros backgrounds </title>
+</head>
+<body>
+    <header>
+        <h1>QUARTA PÁGINA SOBRE OS BACKGROUNDS</h1>
+        <p>
+            Para além do backgrounds-color, backgrounds-image existe outros tipos de backgrounds que podemos usar ao colocar a nossa imagem do fundo ficar mais personalizado possivel. 
+        </p>
+        <p>
+            Nesta página veremos apenas 5 backgrounds mais utéis para melhorar o nosso design. Esses backgrounds são seguintes:
+
+            <ul>
+                <strong><li>Backgrounds-repeat</li></strong>
+                <strong><li>Backgrounds-position</li></strong>
+                <strong><li>Backgrounds-size</li></strong>
+                <strong><li>Backgrounds-repeat</li></strong>
+                <strong><li>Backgrounds-repeat</li></strong>
+            </ul>
+        </p>
+    </header>
+    <main>
+        <article>
+            <ol>
+                <h2><li>Backgrounds-repeat</li></h2>
+                <p>
+                    O backgrounds-repeat como bem o nome significa em inglês - ele serve para repetir a mesma imagem no fundo. <strong><em>Usa-se esse backgrounds junto com backgrounds-image. Para saber mais como se usar o baackground no estilo internal ou external, basta clicando <a href="#">aqui</a> voltá na nossa página anterior onde foi explicada detalhadamente sobre assunto.</em></strong>. O background-repeat possui 4 configurações básicos <strong>(repeate, no-repeate, repeate-y, repeate-x).</strong>
+                </p>
+                <pre>
+                    Estilo internal
+                    --------------
+                    &lt;style&gt;
+                    {
+                        backgrounds-image:url("nome da imagem")
+                        Backgrounds-repeate: (repeate, no-repeate, repeate-y, repeate-x) 
+                    }
+                    &lt;/style&gt;
+                    <h3>Exemplos usando background-repeat</h3>
+                    Ex01: 👉 Nesse exemplo, vai repetir a imagem até que a imagem vai encher a tela do ecrã.
+                    &lt;style&gt;
+                    {
+                        backgrounds-image:url("nome da imagem")
+                        Backgrounds-repeate: <mark>(repeate)</mark>;
+                    }
+                    &lt;/style&gt;
+                    Ex02: 👉 Nesse exemplo, <strong>não vai repetir </strong>a imagem até que a imagem vai encher a tela do ecrã.
+                    &lt;style&gt;
+                    {
+                        backgrounds-image:url("nome da imagem")
+                        Backgrounds-repeate: <mark>(no-repeate)</mark>;
+                    }
+                    &lt;/style&gt;
+                    Ex03: 👉 Nesse exemplo, <strong>vai repetir verticalemente</strong> a imagem até que a imagem vai encher a tela do ecrã.
+                    &lt;style&gt;
+                    {
+                        backgrounds-image:url("nome da imagem")
+                        Backgrounds-repeate: <mark>(repeate-y)</mark>;
+                    }
+                    &lt;/style&gt;
+                    Ex04: 👉 Nesse exemplo, <strong>vai repetir horizontalmente</strong> a imagem até que a imagem vai encher a tela do ecrã.
+                    &lt;style&gt;
+                    {
+                        backgrounds-image:url("nome da imagem")
+                        Backgrounds-repeate: <mark>(repeate-x)</mark>; 
+                    }
+                    &lt;/style&gt;
+                </pre>
+            </ol>
+        </article>
+        <article>
+            <ol start="2"><h2><li>Backgrounds-position</li></h2></ol>
+            <p>
+                O background-position serve para configurar a posição de qualquer imagem do fundo dentro de CSS. O background-position - possui 2 configurações básicas <strong>(Nome da coluna (right ou left) Nome da linha (top, center or bottom))</strong>
+            </p>
+            <pre>
+                Estilo internal
+                --------------
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    Backgrounds-position: ("repeate, no-repeate, repeate-y, repeate-x") 👉 Não é obrigátorio, mas também pode ser usado.
+                    background-position:("Nome da coluna (right ou left) Nome da linha (top, center or bottom)")
+                }
+                &lt;/style&gt;
+                <h3>Exemplos usando background-position</h3>
+                &lt;/style&gt;
+                Ex01: 👉 Nesse exemplo, vai <strong>colocar a imagem no topo à esquerda.</strong>
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem");
+                    Backgrounds-repeate: (no-repeate);
+                    background-position: <mark>left top</mark>;
+                }
+                &lt;/style&gt;
+                Ex02: 👉 Nesse exemplo, <strong>colocar a imagem no topo à direta. </strong>
+                &lt;style&gt;
+                {
+                backgrounds-image:url("nome da imagem");
+                Backgrounds-repeate: (repeate-y);
+                background-position: <mark>right top</mark>;
+                }
+                &lt;/style&gt;
+                Ex03: 👉 Nesse exemplo, <strong>colocar a imagem no centro.</strong>
+                &lt;style&gt;
+                {
+                backgrounds-image:url("nome da imagem");
+                Backgrounds-repeate: (repeate-x);
+                background-position: <mark>center center</mark>;
+                }
+                &lt;/style&gt;
+            </pre>
+        </article>
+        <article>
+            <ol start="3"><h2><li>Backgrounds-size</li></h2></ol>
+            <p>
+                O background-size serve para configurar o tamanho da imagem no fundo  dentro de CSS. O background-size possui 3 configuração básica <strong>(percentagem, cover, contaim e auto)</strong>
+            </p>
+            <pre>
+                Estilo internal
+                --------------
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: ("repeate, no-repeate, repeate-y, repeate-x"); 👉 Não é obrigátorio, mas também pode ser usado.
+                    background-position:("Nome da coluna (right ou left) Nome da linha (top, center or bottom)");👉 Não é obrigátorio, mas também pode ser usado.
+                    background-size: percentagem (lateral(100%, 90%, etc..), horital(100%, 90%, etc..), cover, contaim, auto);
+                }
+                &lt;/style&gt;
+                <h3>Exemplos usando background-size</h3>
+                Ex01:
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: no-repeate;
+                    background-position: left center; 
+                    background-size: <mark>percentagem (100% 90%)</mark>;
+                }
+                &lt;/style&gt;
+                Ex02:
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: no-repeate;
+                    background-position: left center; 
+                    background-size: <mark>cover</mark>;
+                }
+                &lt;/style&gt;
+                Ex03:
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: no-repeate;
+                    background-position: left center; 
+                    background-size: <mark>contaim</mark>;
+                }
+                &lt;/style&gt;
+            </pre>
+        </article>
+        <article>
+            <ol start="4"><h2><li>Backgrounds-attachment</li></h2></ol>
+            <p>
+                O Backgrounds-attachment serve para vincular o fundo de qualquer imagem na tela, esse comando possui 2 configurações básicas <mark>scroll, fixed</mark>;
+            </p>
+            <pre>
+                Estilo internal
+                --------------
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: ("repeate, no-repeate, repeate-y, repeate-x"); 👉 Não é obrigátorio, mas também pode ser usado.
+                    background-position:("Nome da coluna (right ou left) Nome da linha (top, center or bottom)");👉 Não é obrigátorio, mas também pode ser usado.
+                    background-size: percentagem (lateral(100%, 90%, etc..), horital(100%, 90%, etc..), cover, contaim, auto);👉 Não é obrigátorio, mas também pode ser usado.
+                    backgrounds-attachment: <mark>scroll, fixed</mark>;
+                }
+                &lt;/style&gt;
+                <h3>Exemplos usando background-attachment</h3>
+                Ex01:
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: no-repeate;
+                    background-position: left center; 
+                    background-size: percentagem (100% 90%);
+                    backgrounds-attachment: <mark>scroll</mark>;
+                }
+                &lt;/style&gt;
+                Ex02:
+                &lt;style&gt;
+                {
+                    backgrounds-image:url("nome da imagem")
+                    backgrounds-position: no-repeate;
+                    background-position: left center; 
+                    background-size: cover;
+                    backgrounds-attachment: <mark>fixed</mark>;
+                }
+                &lt;/style&gt;
+            </pre>
+        </article>
+        <section>
+            <h1>shorthand background</h1>
+            <p>
+                Configura-se resumidamente todos os backgrounds da seguinte maneira:
+                <mark><ol>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-position</li>
+                    <li>background-size</li> - muitas das vezes o background size não funciona
+                    <li>backgrounds-attachment</li>
+                </ol></mark>
+            </p>
+            <article id="grande">
+                background: color, image, position, [size], attachment;<br>
+                background: black, url('imagens.png'), center center, [contaim], fixed;
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Saiba mais sobre: <br>
+            Quer colocar a única cor do fundo do seu site?<strong><em><a href="">clica aqui</a></em></strong> <br>
+        
+            Quer misturar varias cores para ter um fundo dêgrade na tua página?<strong><em><a href="">clica aqui </a></em></strong> <br>
+
+            Saiba mais sobre outros backgrounds <strong><em><a href="">clica aqui</a></em></strong> <br>
+            
+        </p>
+        <p>
+            Esta página foi elaborado por <a href="">Manuel Oséias</a> se quiser ter mais informções, pode entrar em conctato connosco clicando <br> <a href="">aqui</a> <br>
+            <a href="">aqui</a> <br>
+            <a href="">aqui</a> <br>
+        </p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table{
+            text-align: center;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .q {
+            background-color: gray;
+        }
+        .q1 {
+            text-align: left;
+            background-color: gray;
+        }
+    </style>
+    <title>Exercícios das tabelas</title>
+</head>
+<body>
+    <main>
+        <hr>
+        <h1>Exercícios das tabelas</h1>
+        <hr> <hr>
+        <table>
+            <tr>
+                <td colspan="4" >A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+       </table>
+       <hr>
+       <h1>Exercícios 02</h1>
+       <hr> <hr>
+       <table>
+        <caption>Cinema 02</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="4">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulher</th>
+                    <td>Ana Marias da Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Claudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Runo Mendoca</td>
+                    <td>Intocavel</td>
+                    <td>Amnesia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenco</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars S</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+       </table>
+       <hr>
+       <h1>Exercícios 03 - Media</h1>
+       <hr> <hr>
+       <table>
+            <caption>Tabela das notas</caption>
+            <thead>
+                <tr>
+                    <th class="q" rowspan="2">Área</th>
+                    <th class="q" rowspan="2">Disciplinas</th>
+                    <th class="q" colspan="2">Notas</th>
+                    <th class="q" rowspan="2">Média</th>
+                </tr>
+                
+                <tr>
+                    <th class="q">Nota 1</th>
+                    <th class="q">Nota 2</th>
+                    
+                </tr> 
+                <tr>
+                    <th rowspan="4" class="q">Exatas</th>
+                    <td>Matemática</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Biológia</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th colspan="4" class="q1">Média de Exatas</th>
+                    <td class="q">10</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th colspan="4" class="q1">Média de Humanas</th>
+                    <td class="q">10</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>-->
+       </table>
+    </main>
+    
+</body>
+</html>

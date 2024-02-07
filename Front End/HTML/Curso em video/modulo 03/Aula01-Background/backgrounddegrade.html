@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icon.ico" type="image/x-icon">
+    <title>Background dêgrade</title>
+</head>
+<body>
+    <header>
+        <h1>
+            SEGUNDA PÁGINA SOBRE OS BACKGROUNDS
+        </h1>
+        <nav>
+            <a href="#">Background-color</a>
+            <a href="#">Background-image com imagem</a>
+        </nav>
+        <p>
+            Na <a href="#"><div>página anterior</div></a> sobre <q><em>Back  ground-color</em></q> vimos a definição sobre os background das cores simples, aqui vamos aprofundar mais sobre <em><strong>Background-image de forma dêgrade</strong></em>
+        </p>
+        <main>
+            <section>
+                <h1><ol type="I" start="2"><li>Background-image de forma dêgrade</li></ol></h1>
+                <p>
+                    Para criar dêgrade precisa-se de 2 ou mais core, logo, o background de forma dêgrade é mais nada do que a junção de mais cores. Para criar dêgrade, usamos 2 estilos:
+
+                    <ul>
+                        <strong><li>Estilo internal</li></strong>
+                        <strong><li>Estilo external</li></strong>
+                    </ul>
+                </p>
+                <ol>
+                    <h2><li><dt>Estilo internal</dt></li></h2>
+                    <dd>
+                        Usa-se background duma única cor no estilo internal da seguinte maneira:
+                        <pre>
+                            &lt;style&gt;
+                                tag(body, div, main, etc..)
+                                {
+                                    background-image: <strong><mark>linear-gradient</mark></strong> <strong><mark class="azul"><q>A POSIÇÃO</q></mark></strong>(to <abbr title="Acima">top</abbr>, to <abbr title="Esquerda">left</abbr>
+                                    , to <abbr title="A direta">right</abbr>, to <abbr title="A Baixo">bottom</abbr> ), <strong><mark class="azul"><q>AS CORES</q></mark></strong> (<abbr title="Red - Vermelho; Green - Verde; Blue - Azul">rgb</abbr>, codigo hexadecimal, nome da cor em ingês);
+                                }
+                            &lt;/style&gt;
+                            <h3>Exemplos de usar <em>Background-color</em> no estilo internal</h3>
+                            Ex01:
+                            &lt;style&gt;
+                                body
+                                {
+                                    background-image:linear-gradient(to top, rbg(125,356,234));
+                                }
+                            &lt;style&gt;
+
+                            Ex02:
+                            &lt;style&gt;
+                                body
+                                {
+                                    background-image:linear-gradient(to left, #ff1255);
+                                }
+                            &lt;style&gt;
+
+                            Ex02:
+                            &lt;style&gt;
+                                body
+                                {
+                                    background-image:linear-gradient(to left, blue);
+                                }
+                            &lt;style&gt;
+                        </pre>
+                    </dd>
+                    <h2><li><dt>Estilo external</dt></li></h2>
+                    <dd>
+                        Usa-se background duma única cor no estilo external da seguinte maneira:
+                        <pre>
+                            @charset "UFT-8";
+                            tag(body, div, main, etc..)
+                            {
+                                background-image: <strong><mark>linear-gradient</mark></strong> <strong><mark class="azul"><q>A POSIÇÃO</q></mark></strong>(to <abbr title="Acima" >top</abbr>, to <abbr title="Esquerda">left</abbr>
+                                , to <abbr title="A direta">right</abbr>, to <abbr title="A Baixo">bottom</abbr> ), <strong><mark class="azul"><q>AS CORES</q></mark></strong> (<abbr title="Red - Vermelho; Green - Verde; Blue - Azul">rgb</abbr>, codigo hexadecimal, nome da cor em ingês);
+                            }
+                            <h3>Exemplos de usar <em>background-image</em> no estilo external</h3>
+                            Ex01: 
+                            body
+                            {
+                                background-image:linear-gradient(to top, rbg(125,356,234));
+                            }
+                            Ex02: 
+                            body
+                            {
+                                background-image:linear-gradient(to left, #ff1255);
+                            }
+                            Ex03: 
+                            body
+                            {
+                                background-image:linear-gradient(to left, blue);
+                            }
+                        </pre>
+                    </dd>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Saiba mais sobre: <br>
+                Quer colocar a única cor do fundo do seu site?<strong><em><a href="">clica aqui</a></em></strong> <br>
+            
+                Quer misturar varias cores para ter um fundo dêgrade na tua página?<strong><em><a href="">clica aqui </a></em></strong> <br>
+
+                Saiba mais sobre outros backgrounds <strong><em><a href="">clica aqui</a></em></strong> <br>
+                
+            </p>
+            <p>
+                Esta página foi elaborado por <a href="">Manuel Oséias</a> se quiser ter mais informções, pode entrar em conctato connosco clicando <br> <a href="">aqui</a> <br>
+                <a href="">aqui</a> <br>
+                <a href="">aqui</a> <br>
+            </p>
+        </footer>
+    </header>
+    
+</body>
+</html>

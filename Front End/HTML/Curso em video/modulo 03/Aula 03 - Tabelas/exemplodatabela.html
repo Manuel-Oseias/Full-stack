@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/tabelas.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        hr{
+            width: 300px;
+        }
+    </style>
+    <title>Exemplos das tabelas</title>
+</head>
+<body>
+    <main>
+        <h1>Tabela Simple</h1> <hr style="text-align: center;"><hr>
+        <table id="ts1">
+            <caption class="tab">Tabela 01</caption>
+            <tr>
+                <th>th</th>
+                <th>th</th>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>td</td>
+            </tr>
+        </table> <br><br>
+        <p>
+            Configuração ajustando os dados verticalmente usa-se o comando <q><strong><mark>vertical-align: (top; bottom, middle)</mark></strong></q>
+        </p>
+        <table id="ts11">
+            <caption class="tab">Tabela 1.1</caption>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </table><br><br>
+        <p>
+            Configuração ajustando os dados horizontalmente usa-se o comando <q><strong><mark>vertical-align: (top; bottom, middle)</mark></strong></q>
+        </p>
+        <table id="ts111">
+            <caption class="tab">Tabela 1.11</caption>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+        </table> <br><br>
+        <p>
+            A tabela simple com comando <q><strong>border-collapse: collapse</strong></q>
+        </p>
+        <table id="ts2">
+            <caption class="tab">Tabela 1.2</caption>
+            <tr>
+                <th>Disciplina</th>
+                <th>Nome</th>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td>João Feirra</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>António Manuel</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>Manuel Oséias</td>
+            </tr>
+        </table> <br><br>
+        <h1>Tabela Complexa</h1> <hr style="text-align: center;"><hr>
+        <p>
+            cabeçário (color: gray), copro (color:white) e rodapé(color:red),
+        </p>
+        <table id="tc1">
+            <caption class="tab">Tabela 02</caption>
+            <thead class="gray">
+                <tr>
+                    <th>Nome do aluno</th>
+                    <th>Nome da disciplina</th>
+                    <th>Primeira nota</th>
+                    <th>Segunda nota</th>
+                    <th>Media final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manuel Oséias</td>
+                    <td>Matemática</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Luzia</td>
+                    <td>Quimica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Lubongo</td>
+                    <td>Matemática</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+          
+            <tfoot class="red">
+                <tr>
+                    <th>Teresa</th>
+                    <th>Fisica</th>
+                    <th>10</th>
+                    <th>10</th>
+                    <th>10</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Tabela Mesclada</h1> <hr style="text-align: center;"><hr>
+        <p>
+            A(contem 4 colunas - gray), B (contem 4 linhas - yellow), C(contem 4 linhas - green) N(contem 4 colunas - red)
+        </p>
+        <table>
+            <caption class="tab">Tabela 03</caption>
+            <tr>
+                <td colspan="4" class="gray">A</td>
+                <td rowspan="4" class="yellow">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="green">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="red">N</td>
+            </tr>
+           </table>
+           <h1>Caption</h1><hr style="text-align: center;"><hr>
+           <p>
+            Tabela acompanhando com titulo
+
+           </p>
+           <table id="ts2">
+            <caption class="tab">Tabela 4</caption>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+        </table> <br><br>
+        <h1>Escopo de títulos</h1>
+        <p>
+            Vizualmente não havera diferença com a tabela complexa entrentato nos código onde se encontra nome, disciplina etc,... adicionamos alguns comandos
+        </p>
+        <table id="tc1">
+            <caption class="tab">Tabela 02</caption>
+            <thead class="yellow">
+                <tr>
+                    <th scope="col">Nome do aluno<br><br> Scope="col"</th>
+                    <th scope="col">Nome da disciplina <br><br> Scope="col"</th>
+                    <th scope="col">Primeira nota <br><br> Scope="col"</th>
+                    <th scope="col">Segunda nota <br><br> Scope="col"</th>
+                    <th scope="col">Media final <br><br> Scope="col"</th>
+                </tr>
+            </thead>
+            <tbody class="green">
+                <tr>
+                    <td>Manuel Oséias</td>
+                    <td>Matemática</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Luzia</td>
+                    <td>Quimica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Lubongo</td>
+                    <td>Matemática</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>Fisica</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+          
+            <tfoot class="red">
+                <tr>
+                    <th Scope="row">Teresa <br><br> Scope="row"</th>
+                    <th Scope="row">Fisica <br><br> Scope="row"</th>
+                    <th Scope="row">10 <br><br> Scope="row"</th>
+                    <th Scope="row">10 <br><br> Scope="row"</th>
+                    <th Scope="row">10 <br><br> Scope="row"</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Formatação das linhas</h1>
+        <p>
+            Iremos usar Metodo do comando tag:nth-chuld(2,3,4,5.... n) par (red) e ímpar(gray)
+        </p>
+        <table id="tc1">
+            <caption class="tab">Tabela 02</caption>
+            <thead>
+                <tr>
+                    <th scope ="col">A</th>
+                    <th scope ="col">B</th>
+                    <th scope ="col">C</th>
+                    <th scope ="col">D</th>
+                    <th scope ="col">F</th>
+                    <th scope ="col">G</th>
+                </tr>
+            </thead>
+            <tbody id="tz1">
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                    
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>D</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>Q</td>
+                    <td>G</td>
+                    <td>W</td>
+                    <td>P</td>
+                </tr>
+            </tbody>
+          
+            <tfoot>
+                <tr>
+                    <th scope ="row">A</th>
+                    <th scope ="row">B</th>
+                    <th scope ="row">C</th>
+                    <th scope ="row">D</th>
+                    <th scope ="row">F</th>
+                    <th scope ="row">G</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Formatação das Colunas</h1>
+        <p>
+            Iremos usar Metodo do comando: colgroup com seguintes cores (red, green, yellow - duas vezes)
+        </p>
+        <table id="tc1">
+            <colgroup>
+                <col class="red">
+                <col class="green">
+                <col class="yellow">
+                <col class="red">
+                <col class="green">
+                <col class="yellow">
+            </colgroup>
+            <caption class="tab">Tabela 02</caption>
+            <thead>
+                <tr>
+                    <th scope ="col">A</th>
+                    <th scope ="col">B</th>
+                    <th scope ="col">C</th>
+                    <th scope ="col">D</th>
+                    <th scope ="col">F</th>
+                    <th scope ="col">G</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                    
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>D</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>Q</td>
+                    <td>G</td>
+                    <td>W</td>
+                    <td>P</td>
+                </tr>
+            </tbody>
+          
+            <tfoot>
+                <tr>
+                    <th scope ="row">A</th>
+                    <th scope ="row">B</th>
+                    <th scope ="row">C</th>
+                    <th scope ="row">D</th>
+                    <th scope ="row">F</th>
+                    <th scope ="row">G</th>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>Cabeçalho fixo em tabelas grandes</h1>
+        <p>
+           
+        </p>
+        <table id="tc1">
+            <caption class="tab">Tabela 02</caption>
+            <thead>
+                <tr>
+                    <th scope ="col">A</th>
+                    <th scope ="col">B</th>
+                    <th scope ="col">C</th>
+                    <th scope ="col">D</th>
+                    <th scope ="col">F</th>
+                    <th scope ="col">G</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>91</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>42</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>52</td>
+                    <td>27</td>
+                    
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>D</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>Q</td>
+                    <td>G</td>
+                    <td>W</td>
+                    <td>P</td>
+                </tr>
+            </tbody>
+          
+            <tfoot>
+                <tr>
+                    <th scope ="row">A</th>
+                    <th scope ="row">B</th>
+                    <th scope ="row">C</th>
+                    <th scope ="row">D</th>
+                    <th scope ="row">F</th>
+                    <th scope ="row">G</th>
+                </tr>
+            </tfoot>
+        </table> <br><br>
+        <h1>Tabelas responsivas</h1>
+        <p>
+            Acrescenatmos a tag <strong>Div</strong> para coloca-lo no container
+        </p>
+        <div id="container">
+            <table id="tc1">
+                <caption class="tab">Tabela 02</caption>
+                <thead>
+                    <tr>
+                        <th scope ="col">A</th>
+                        <th scope ="col">B</th>
+                        <th scope ="col">C</th>
+                        <th scope ="col">D</th>
+                        <th scope ="col">F</th>
+                        <th scope ="col">G</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>21</td>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>52</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>91</td>
+                        <td>72</td>
+                        <td>64</td>
+                        <td>42</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>21</td>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>52</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>91</td>
+                        <td>72</td>
+                        <td>64</td>
+                        <td>42</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>21</td>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>52</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>21</td>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>52</td>
+                        <td>27</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>D</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>Q</td>
+                        <td>G</td>
+                        <td>W</td>
+                        <td>P</td>
+                    </tr>
+                </tbody>
+              
+                <tfoot>
+                    <tr>
+                        <th scope ="row">A</th>
+                        <th scope ="row">B</th>
+                        <th scope ="row">C</th>
+                        <th scope ="row">D</th>
+                        <th scope ="row">F</th>
+                        <th scope ="row">G</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

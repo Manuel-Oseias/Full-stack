@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+</head>
+<body>
+    <header>
+        <h1>ALINHAMENTO VERTICAL</h1>
+        <p>
+            Qualquer desevolvidores dos sites simples, sente a necessidade de movementar qualquer caixa, infelizmente o comando <mark>margim</mark> não nos permite colocar a caixa no centro, e isso dificulta muito.
+            
+            Neste blog, iremos tratar sobre 2 assuntos essencial, alinhamento vertical e altura de viewport, por isso é essencial que o leitor tenha conhecimento básico sobre os <mark>background.</mark>
+        </p>
+        <nav>
+            <a href="#">background-color</a>
+            <a href="#">background-image</a>
+            <a href="#">Mais backgrounds</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Configurar o tamnho do ecrã</h2>
+            <p>
+                Para configurar o tamanho do ercã, usa-se <mark>height</mark> nos dois estilos das seguintes maneiras: <br>
+            </p>
+            <pre>
+                Estilo internal
+                ---------------
+                &lt;style&gt;
+                    tag(body, main, div, etc...)
+                    {
+                        height: percentagem <mark>vh;</mark>
+                    }    
+                &lt;/style&gt;
+                Exemplo:
+                &lt;style&gt;
+                    body
+                    {
+                        height: percentagem <mark>vh;</mark>
+                    }  
+                &lt;/style&gt;
+
+                Estilo external
+                ---------------
+                @charset "UTF-8";
+                body
+                {
+                    height: percentagem <mark>vh;</mark>
+                } 
+                Exemplo:
+                @charset "UTF-8";
+                body
+                {
+                    height: <mark>98vh;</mark>
+                }
+            </pre>
+        </article>
+        <article>
+            <h2>Alinhamento vertical</h2>
+            <p>
+                Quando pretende-se alinhar duas caixas por exemplo, (article e section), se poder obervar na página do exemplo que a primeira caixa está incluido na segunda.usa-se seguintes métodos.
+            </p>
+            <ol>
+                <h3><li>Colocar uma caixa dentro doutra caixa</li></h3>
+                <p>
+                    Para alinhar duas caixa, basta estruturar bem os seus tags dentro do html, por exemplo
+                    <pre>
+                        &lt;main&gt;
+                            &lt;section&gt;
+                                &lt;article&gt;
+                                    &lt;p&gt;
+                                        contéudos
+                                    &lt;/p&gt;
+                                &lt;/article&gt;
+                            &lt;/section&gt;
+                        &lt;/main&gt;
+                    </pre>
+                    Aqui conseguimos notar que a tag, main contain a tag section e a tag section contain a tag article,  sucessivamente as tags estão alinhadas dentro duma caixa.
+                </p>
+                <h3><li>Colocar a caixa maior na configuração relativa</li></h3>
+                <p>
+                    Suponhamos que queremos configurar a tag selection maior e article menor ou seja a tag article está dentro da caixa da tag selection. Essa configuração relativa pode ser feita no estilo internal como external desta maneira:
+                    <pre>
+                        Estilo internal
+                        ---------------
+                        &lt;style&gt;
+                        selection#maior
+                        {
+                            <mark>position: relative</mark>
+                        }    
+                        &lt;/style&gt;
+
+                        Estilo external
+                        ---------------
+                        @charset "UTF-8";
+                        selection
+                        {
+                            <mark>position: relative</mark>
+                        } 
+                    </pre> 
+                    <h3><li>Colocar a caixa maior na configuração relativa</li></h3>
+                    <p>
+                        Do mesmo jeito que trabalhamos com exemplo anterior, após de colocar a maior caixa numa posição relativa, aqui colocaremos a menor caixa na posição absoluta afim de conseguir mexer ou movementar a caixa em qualquer posição que queremos.
+                    </p>
+                    <p>
+                        Continuamos a trabalhar com exemplo anterior, selection caixa maior e article caixa menor, da mesma forma que colocamos a caixa maior em dois estilo, aqui também faremos o mesmo.
+                        <pre>
+                        Estilo internal
+                        ---------------
+                        &lt;style&gt;
+                        selection#maior
+                        {
+                            <mark>position: relative</mark> <strong>DEVEM PERMANECER RELATIVA - para ser fixado</strong>
+                        }
+                        article#maior
+                        {
+                            <mark>position: absolute</mark> 
+                            <mark>left: 50%</mark><strong> - posição direta ou esquera</strong> 
+                            <mark>top: 70%</mark><strong> - posição a cima ou a baixo</strong>
+                            <mark>transform: translate((70%, 90%) - posição direta ou esquera, posição a cima ou a baixo)</mark> 
+                        }    
+                        &lt;/style&gt;
+
+                        Estilo external
+                        ---------------
+                        @charset "UTF-8";
+                        selection#maior
+                        {
+                            <mark>position: relative</mark> <strong>DEVEM PERMANECER RELATIVA - para ser fixado</strong>
+                        }
+                        selection#menor
+                        {
+                            <mark>position: absolute</mark> 
+                            <mark>left: 50%</mark><strong> - posição direta ou esquera</strong> 
+                            <mark>top: 70%</mark><strong> - posição a cima ou a baixo</strong>
+                            <mark>transform: translate((70%, 90%) - posição direta ou esquera, posição a cima ou a baixo)</mark> 
+                        } 
+                        </pre>
+                    </p>
+                </p>
+            </ol>
+        </article>
+    </main>
+</body>
+</html>
