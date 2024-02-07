@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As fontes internas</title>
+    <link rel="shortcut icon" href="../Módulo 02/Fotos/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>AS FONTES EM HTML</h1>
+    <main>
+        <p>
+            Existe varias maneiras de colocar fontes em html, algumas desses fontes são:
+            <ol>
+                <li>fonte-family</li>
+                <li>fonte-size</li>
+                <li>fonte-style</li>
+            </ol>
+            <ol>
+                <h2><strong><li>FONTE-FAMILY</li></strong></h2>
+                A família de tipos de letra seleção em (X)HTML, CSS, e sistemas derivados especifica uma lista priorizada de fontes e genérico de nomes de família; em conjunto com a correlação de propriedades de tipo de letra, esta lista determina o particular face de tipo de letra utilizado para compor as personagens. <br><br>
+
+                No CSS há cinco genérico famílias de tipos de letra: <br> <br>
+                <ul>
+                    <dt style="font-family: 'Times New Roman', Times, serif;"><li><strong>Serif font</strong></li></dt> 
+                    <dd style="font-family: 'Times New Roman', Times, serif;"><br>
+                        Serif fontes têm um pequeno derrame nas bordas de cada letra. Elas criam uma sensação de formalidade e elegância. <br>
+                        Ex: Times New roman, Georgia, Garamond, etc... <br><br>
+
+                        Coloca-se fonte serifada (tanto inline,internal ou external) das seguintes maneiras: <br><br>
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-family: "Nome da fonte serifada", "Nome da fonte serifada", ... serif;"&gt; </em></q>
+                            </li><br>
+
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-family:"Nome da fonte serifada", "Nome da fonte serifada",... serif;"}}</em></q>
+                            </li><br>
+
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-family:"Nome da fonte serifada", "Nome da fonte  serifada",... serif;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd><br><br>
+                    <dt style="font-family: Arial, Helvetica, sans-serif;"><li><strong>Sans Serif font</strong></li></dt>
+                    <dd style="font-family: Arial, Helvetica, sans-serif;"><br>
+                        Sans-serif fontes tem linhas limpas (sem pequenos golpes em anexo). Eles criam uma aparência moderna e minimalista. <br>
+                        Ex: Arial, Verdana, Helvetica, etc... <br><br>
+
+                        Coloca-se fonte não serifada (tanto inline,internal ou external) das seguintes maneiras: <br><br>
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-family: "Nome da fonte não serifada", "Nome da fonte não serifada", ... serif;"&gt; </em></q>
+                            </li><br>
+
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-family:"Nome da fonte não serifada", "Nome da fonte não serifada",... serif;"}}</em></q>
+                            </li><br>
+
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-family:"Nome da fonte não serifada", "Nome da fonte não serifada",... serif;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd><br><br>
+                    <dt style="font-family: 'Courier New', Courier, monospace;"><li><strong>Monospace font</strong></li></dt>
+                    <dd style="font-family: 'Courier New', Courier, monospace;"><br>
+                        Monoespaçada fontes - aqui todas as letras têm a mesma largura fixa. Eles criam uma mecânica olhar. <br>
+                        Ex: Courier New, Lucida Console, Monaco, etc... <br><br>
+
+                        Coloca-se a fonte monoespaçada  (tanto inline,internal ou external) das seguintes maneiras: <br><br>
+
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-family: "Nome da fonte monoespaçada", "Nome da fonte monoespaçada", ... serif;"&gt; </em></q>
+                            </li><br>
+
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-family:"Nome da fonte monoespaçada", "Nome da fonte monoespaçada",... serif;"}}</em></q>
+                            </li><br>
+
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-family:"Nome da fonte monoespaçada", "Nome da fonte monoespaçada",... serif;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd> <br><br>
+                    <dt style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><li><strong>Cursive font</strong></li></dt>
+                    <dd tyle="font-family: 'Lucida Sans', 'Lucida Sans Regular;"><br>
+                        Cursiva fontes imitar humanos manuscrito. <br>
+                        Ex: Brush Script MT, Lucida Handwriting, etc... <br><br>
+
+                        Coloca-se fonte cursiva   (tanto inline,internal ou external) das seguintes maneiras: <br><br>
+
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-family: "Nome da fonte cursiva", "Nome da fonte cursiva", ... serif;"&gt; </em></q>
+                            </li><br>
+
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-family:"Nome da fonte cursiva", "Nome da fonte cursiva",... serif;"}}</em></q>
+                            </li><br>
+
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-family:"Nome da fonte cursiva", "Nome da fonte cursiva",... serif;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd><br><br>
+                    <dt><li><strong>Fantasy</strong></li></dt>
+                    <dd><br>
+                        Fantasia fontes são decorativos/lúdico fontes. <br>
+                        Ex: Copperplate, Papyrus
+                    </dd><br><br>
+
+                    <p>
+                        <mark><em>Nota que qualquer tipo de fonte possui os diferentes nomes de tipo de letra pertence a um dos genéricos famílias de tipos de letra.</em></mark><br>
+
+                        <em>Na mesma linha pode se colocar 3 nomes de fones mas deve sempre terminar com nome generico!</em><mark>Ex: Times New roman, Georgia, Garamond,Sans-serif. <br><br>AS FONTES SERIFADAS SÃO USADA PARA COLOCAR TEMAS E AS FONTES NÃO SERIFADAS SÃO USADAS PARA COLOCAR MATERIAS.</mark><br>
+                    </p>
+                </ul>
+                <h2><strong><li>FONT WEIGHT</li></strong></h2>
+                O peso das fontes são caraterizados por: <br><br>
+                <ul>
+                    <li>lighter (entre 100 à 225) - é a fonte mais leve</li>
+                    <li>normal (entre 225 à 350)  - é a fonte normal </li> 
+                    <li>bold (entre 300 à 600)- é a fonte escura</li>
+                    <li>bolder (entre 600 à 900)- é a fonte mais negritos</li>
+                </ul><br>
+                Para a definir o tamanho do texto com pixels oferece controle completo sobre o tamanho do texto, usa-se da seguinte maneira: <br><br>
+                <p>
+                    <ul>
+                        <li>
+                            Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-weight: "Número de tamanho ou nome do peso (lighter, normal, bold, ou bolder)";"&gt; </em></q>
+                        </li><br>
+                        <li>
+                            Internal: <q><em>No corpo do CSS, criar um style{body{"font-weight: "Número de tamanho ou nome do peso (lighter, normal, bold, ou bolder)";"}}</em></q>
+                        </li><br>
+                        <li>
+                            External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-weight: "Número de tamanho ou nome do peso (lighter, normal, bold, ou bolder)";"}</em></q>
+                        </li><br>
+                    
+                    </ul>
+                    <h3>Exemplo de fonte peso</h3>
+                    <p style="font-weight: 600;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatem est quibusdam assumenda numquam iure sed quasi nulla saepe cum eligendi rerum ducimus at molestias illo, placeat iste omnis velit!
+                    </p>
+                </p>
+                <h2><strong><li>FONT STYLE</li></strong></h2>
+                <p>
+                    A font-style propriedade é principalmente usado para especificar texto em itálico.
+                    Esta propriedade tem três valores:
+                    <ul>
+                        <strong><li>
+                            Normal</strong> - O texto é apresentado normalmente
+                        </li>
+                        <strong><li>
+                            Itálico</strong> - O texto é mostrado em itálico
+                        </li>
+                        <strong><li>
+                            Oblíquo</strong> - O texto é "encostado" (oblíquo é muito semelhante ao itálico, mas menos suporte)
+                        </li>
+                    </ul>
+
+                </p>
+
+                <h2><strong><li>FONT SIZE</li></strong></h2>
+                O font-size propriedade define o tamanho do texto. Ser capaz de gerenciar o tamanho do texto é importante no web design. No entanto, você não deve usar o tamanho de fonte ajustes para fazer parágrafos olhar como cabeçalhos ou títulos de olhar como parágrafos.
+
+                O tamanho do tipo de letra do valor pode ser absoluta ou relativa de tamanho.
+                <ol type="i"><br>
+                    <dt><strong><li>Tamanho absoluto</li></strong></dt><br>
+                    <dd>
+                        <ul>
+                            <li>
+                                Define o texto para um tamanho especificado
+                            </li>
+                            <li>
+                                Não permitir que um usuário altere o tamanho do texto em todos os navegadores (ruim por motivos de acessibilidade)
+                            </li>
+                            <li>
+                                Tamanho absoluto é útil quando o tamanho físico da saída é conhecida
+                            </li><br><br>
+
+                            Ex: cm, mm, px, in, etc...
+                        </ul>
+                    </dd><br><br>
+                    <dt><strong><li>Tamanho relativo:</li></strong></dt><br>
+                    <dd>
+                        <ul>
+                            <li>
+                                Define o tamanho em relação aos elementos circundante
+                            </li>
+                            <li>
+                                Permite que o usuário altere o tamanho do texto em navegadores
+                            </li> <br><br>
+
+                            Ex: em, ex,vw, etc...
+                        </ul>
+                    </dd> <br><br>
+                    <mark><q><strong>
+                        Nota: Se você não especificar um tamanho de tipo de letra, o tamanho padrão para o texto normal, como parágrafos, é 16px (16px=1em).
+                    </strong></q></mark>
+                </ol><br><br>
+                Existe 3 maneiras de colocar tamanho no CSS,  <br><br>
+                <ol type="a">
+                    <dt><strong><li>
+                        Definir O Tamanho Do Tipo De Letra Com <q>Pixels</q>
+                    </li></strong></dt>
+                    <dd><br>
+                        Para a definir o tamanho do texto com pixels oferece controle completo sobre o tamanho do texto, usa-se da seguinte maneira: <br><br>
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-size: "Número de tamanho"<mark>px</mark>;"&gt; </em></q>
+                            </li>
+
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-size: "Número de tamanho"<mark>px</mark>;"}}</em></q>
+                            </li>
+
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-size: "Número de tamanho"<mark>px</mark>;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd>
+                    <dt><strong><li>
+                        Definir O Tamanho Do Tipo De Letra Com <q>Em</q>
+                    </li></strong></dt>
+                    <dd><br>
+                        Para a definir o tamanho do texto com <q>Em</q> oferece controle completo sobre o tamanho do texto, usa-se da seguinte maneira: <br><br>
+
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-size: "Número de tamanho"<mark>em</mark>;"&gt; </em></q>
+                            </li>
+    
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-size: "Número de tamanho"<mark>em</mark>;"}}</em></q>
+                            </li>
+    
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-size: "Número de tamanho"<mark>em</mark>;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd><br><br>
+                    <dt><strong><li>
+                        Ágil Tamanho Da Fonte
+                    </li></strong></dt>
+                    <dd> <br><br>
+                        O tamanho do texto pode ser definido com uma <q><abbr title="view width">vw</abbr></q> unidade, o que significa que a "janela de visualização de largura". <br><br>
+                
+                        De que forma o tamanho do texto seguirão o tamanho da janela do navegador: <br><br>
+                        <ul>
+                            <li>
+                                Inline: <q><em>&lt;tag(h,p,dt, etc..) style ="font-size: "Número de tamanho"<mark>vw</mark>;"&gt; </em></q>
+                            </li>
+    
+                            <li>
+                                Internal: <q><em>No corpo do CSS, criar um style{body{"font-size: "Número de tamanho"<mark>vw</mark>;"}}</em></q>
+                            </li>
+    
+                            <li>
+                                External: <q><em>No corpo do CSS, cria um link doutro estilo e faz a mesma coisa. body{"font-size: "Número de tamanho"<mark>vw</mark>;"}</em></q>
+                            </li><br>
+                        </ul>
+                    </dd>
+                </ol> <br><br>
+
+                <h3><ins>Exemplo de tamanho <q>pixel</q></h3></ins>
+                <p style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda excepturi error sequi voluptatem quis corporis obcaecati, nesciunt dolores! Dolorem modi aliquid eligendi quae ducimus molestiae consectetur, doloremque accusamus aperiam!
+                </p><br><br>
+                <h3><ins> Exemplo de tamnho <q>Em</q></h3></ins>
+                <p style="font-size: 2em;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, modi? Vero, mollitia! Inventore, culpa sapiente quas esse tempore debitis rerum id obcaecati maxime, perspiciatis ipsam dolorem nesciunt possimus perferendis quo.
+                </p>
+                <h3><ins>Exemplo de tamanho <q>vw</q></h3></ins>
+                <p style="font-size: 6vw;">
+                    Olá! mundo
+                </p>
+            </ol>
+            <h2 style="font:italic 900 6vw 'arial', 'sans-serif';">JUNTAR TODAS AS FONTES</h2>
+            <P>
+                Existe a possibilidade de juntar 3 ou 4 fontes numa única linha seguindo essa ordem: <br><br>
+                <ol>
+                    <li><strong>font-style</strong></li>
+                    <li><strong>font-weight</strong></li>
+                    <li><strong>font-size</strong></li>
+                    <li><strong>font-family</strong></li>
+                </ol> <br><br>
+
+                Usa-se das seguintes maneiras:
+                <ul>
+                    <dt><li>Inline form</li></dt>
+                    <dd><br>
+                        &lt; tag(h, p, etc..) style = "
+                            font: (font-style fonte) (font-weight) (font-size) ('font-family', 'font-family');"
+                        }&gt; <br><br>
+
+                        Ex: 
+                        &lt;tag(h, p, etc..) style = "font: italic normal 16px 'Arial', 'sens-serif';
+                        }&gt; <br>
+
+                        <p style="font: italic normal 20px 'arial', 'sans-serif';">
+                            Ex: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora, placeat eligendi enim dignissimos voluptatum veritatis accusamus harum maxime laudantium porro fugit! Qui, assumenda quas! Nihil ut nulla voluptatem dolores.
+                        </p>
+                    </dd>
+                    <dt><li>Internal form</li></dt>
+                    <dd><br>
+                        style 
+                        {
+                            tag(h, body, p, etc...)
+                            {
+                                font: (font-style fonte) (font-weight) (font-size) ('font-family', 'font-family');"
+                            }
+                            
+                        } <br><br>
+
+                        Ex: 
+                        style
+                        {
+                            tag(h, p, etc..)
+                            {
+                                font: italic normal 16px 'Arial', 'sens-serif';
+                            }
+                        }<br><br>
+                    </dd>
+                    <dt><li>External form</li></dt>
+                    <dd> <br>
+                        tag(h,body,p, etc...)
+                        {
+                            font: (font-style fonte) (font-weight) (font-size)  ('font-family', 'font-family');"
+                        } <br><br>
+
+                        Ex: tag(h, p, etc..)
+                        {
+                            font: italic normal 16px 'Arial', 'sens-serif';
+                        }<br>
+                    </dd>
+                </ul>
+            </P>
+        </p>
+    </main><br><br>
+    
+    <p>
+        <h2>Sites para fontes</h2>
+        <p>
+            <ul>
+                <li>Para ter mais informações sobre <strong>as fontes </strong>pode acessar este site clicando <a href="https://www.w3schools.com/css/css_font.asp" target="_blank">aqui</a>
+                <br><br></li>
+                
+                <li>Para ter mais informações sobre <strong>as fontes extenas</strong> pode acessar a nossa página clicando <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2002/Tipografia/fontesexternas.html" target="_blank">aqui</a><br><br></li>
+
+                <li>Para acessar o site da <strong>tipografia</strong> pode clicar <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2002/Tipografia/index.html" target="_blank">aqui</a><br><br></li>
+
+                <li>Para acessar o site que trata sobre <strong>alinhamentos</strong> pode clicar <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2002/Tipografia/alinhamento.html" target="_blank">aqui</a><br><br></li>
+            </ul>
+        </p>
+        <h2>Links</h2>
+        <ul>
+            <li>Para ter acesso ao material em pdf, clica <a href="fontes.pdf">aqui</a></li><br>
+            
+            <li>Para ter acesso ao nosso playlist dos links, clica <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/link%20todos%20exercicios/modulo1.html" target="_blank" rel="external">aqui</a></li> <br>
+        
+        </ul>
+    </p>
+   
+</body>
+</html>

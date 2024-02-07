@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilo no CSS/link02.css">
+    <link rel="shortcut icon" href="../Fotos/logo.png" type="image/x-icon">
+    <title>Os links no HTML</title>
+</head>
+<body>
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>OS LINKS NO HTML PARTE 02</h1>
+            <div id="link">
+                <pre id="Ant">
+                    <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Index/index.html" id="ant">Anterior</a><a href="#top" id="post" rel="next">Seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2> O Atributo dos Links em HTML -</h2>
+            <p>
+                Por padrão, a página vinculada será exibida na janela do navegador atual. Para alterar isso, você deve especificar outro destino para o link.
+            </p>
+            <ol>
+                <h3 class="vermelho"><li>O atributo <q>target</q></h3></li>
+                <p>
+                    O target atributo especifica onde abrir o documento vinculado. O target atributo pode ter um dos seguintes valores:
+                </p>
+                <ul>
+                    <li><span class="vermelho">_self</span> - Padrão. Abre o documento na mesma janela/aba de como ele foi clicado</li>
+                    <li><span class="vermelho">_blank</span> - Abre o documento em uma nova janela ou guia</li> 
+                    <li><span class="vermelho">_parent</span>  - Abre o documento no quadro de pai</li>
+                    <li><span class="vermelho">_top</span>  - Abre o documento no corpo inteiro da janela</li> 
+                </ul><br>
+                <div>
+                    <iframe src="ex10 - target.html" frameborder="0">
+                        <p>
+                            A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex10%20-%20target.html" target="_blank">aqui ✌️</a>
+                        </p>
+                    </iframe>
+                </div> <br>
+                <p class="exemplo">
+                    Exemplo prático: <br>
+                    
+                    Acesse Google, clicando <a href="https://www.google.com" target="_blank">aqui✌️</a>
+                </p>
+            </ol>
+        </section><br>
+        <section>
+            <ol start="2"><h3 class="vermelho"><li>Atributo <q>dowload</q></h3></li></ol><br>
+            <p>
+                O <span class="vermelho">download</span> atributo especifica que o destino (o arquivo especificado no <span class="vermelho">href</span> atributo) serão baixadas quando um usuário clica no hiperlink. <br>
+
+                Opcionais valor do <span class="vermelho">download</span> atributo será o novo nome do arquivo após o download. Não há restrições sobre os valores permitidos, e o navegador irá automaticamente detectar a extensão de arquivo correta e adicioná-lo ao arquivo (.img, .pdf, .txt .html, etc.). <br>
+
+                Se o valor for omitido, o nome do arquivo original é utilizado. <br>
+            </p>
+            <p>
+            <strong><mark> &lt;download="nome do arquivo"&gt;</mark></strong>
+            </p><br>
+            <div>
+                <iframe src="ex11 - download.html" frameborder="0">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex11%20-%20download.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div>
+            <p class="exemplo">
+                Exemplo prático: <br> 
+                Baixa a imagem do facebook clicando-a
+                <a href="../Fotos/logo-facebook.jpg" target="_blank" download ><br><img src="../Fotos/logo-facebook.jpg" width="30" height="40" style="border-radius: 15px;" alt="Logo tipo do facebook"></a>
+            </p>
+        </section><br>
+        <section>
+            <ol start="3"><h3 class="vermelho"><li>hAttributo da língua <q>reflang </q></li></h3></ol><br>
+            <p>
+                O hreflang atributo especifica o idioma do documento vinculado. Este atributo é usado somente se o href atributo é definido. <br>
+
+                <mark><strong>Nota:</strong> Este atributo é meramente consultivo.</mark>
+            </p><br>
+            <div>
+                <iframe src="ex12 - lingua.html" frameborder="0">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex12%20-%20lingua.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div>
+            <p class="roxo">
+                Para ler todos os códigos de idiomas disponíveis, consulte o nosso <a href="https://www.w3schools.com/" target="_blank">código de Idioma de referência</a>.
+            </p><br>
+        </section>
+        <section>
+            <ol start="4"><h3 class="vermelho"><li>Atributo da politica referência</li></h3></ol><br>
+            <p>
+                O <span class="vermelho">referrerpolicy</span> atributo especifica quais informações de referência para enviar quando o utilizador clica na hiperligação.
+            </p>
+            <div id="container">
+                <table>
+                    <caption>Valores De Atributo</caption>
+                    <thead>
+                        <tr>
+                            <th>Valor</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>no-referrer</td>
+                            <td>Não há informações de referência é enviado</td>
+                        </tr>
+                        <tr>
+                            <td>no-referrer-when-downgrade</td>
+                            <td>Padrão. Envia a origem, o caminho e a seqüência de caracteres de consulta se o protocolo de segurança de nível permanece o mesmo ou é mais elevada (HTTP para HTTP, HTTPS HTTPS, HTTP para HTTPS estiver ok). Envia nada para o menor nível seguro (HTTPS não está ok)</td>
+                        </tr>
+                        <tr>
+                            <td>origin</td>
+                            <td>Envia a origem (esquema, host e porta) do documento</td>
+                        </tr>
+                        <tr>
+                            <td>origin-when-cross-origin</td>
+                            <td>Envia a origem do documento para solicitação de origem cruzada. Envia a origem, o caminho e a seqüência de caracteres de consulta para a mesma origem pedido</td>
+                        </tr>
+                        <tr>
+                            <td>same-origin</td>
+                            <td>Envia uma referência para a mesma origem do pedido. Envia nenhuma referência para solicitação de origem cruzada</td>
+                        </tr>
+                        <tr>
+                            <td>strict-origin-when-cross-origin</td>
+                            <td>Envia a origem se o protocolo de segurança de nível permanece o mesmo ou é mais elevada (HTTP para HTTP, HTTPS para HTTPS e HTTP para HTTPS estiver ok). Envia nada para o menor nível seguro (HTTPS)</td>
+                        </tr>
+                        <tr>
+                            <td>unsafe-url</td>
+                            <td>Envia a origem, o caminho e a seqüência de caracteres de consulta (independentemente de segurança). Utilize este valor com cuidado!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section><br>
+        <section>
+            <ol start="5"><h3 class="vermelho"><li>Atributo <q>rel</q></li></h3></ol>
+            <p>
+                O <span class="vermelho">rel</span> atributo especifica o relacionamento entre o documento atual e o documento vinculado. <br>
+
+                Usado somente se o <span class="vermelho">href</span> atributo estiver presente. <br>
+
+                Dica: mecanismos de Pesquisa pode utilizar este atributo para obter mais informações sobre um link!
+            </p>
+            <table>
+                <caption>Valores De Atributo</caption>
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>alternate</td>
+                        <td>Fornece um link para uma representação alternativa do documento (por exemplo, imprimir a página, traduzido ou espelho)</td>
+                    </tr>
+                    <tr>
+                        <td>author</td>
+                        <td>Fornece um link para o autor do documento</td>
+                    </tr>
+                    <tr>
+                        <td>bookmark</td>
+                        <td>Permanente URL usada para bookmarking</td>
+                    </tr>
+                    <tr>
+                        <td>external</td>
+                        <td>Indica que o referido documento não é parte do mesmo site como o documento actual</td>
+                    </tr>
+                    <tr>
+                        <td>help</td>
+                        <td>Fornece um link para um documento de ajuda</td>
+                    </tr>
+                    <tr>
+                        <td>license</td>
+                        <td>Fornece um link para informações de licenciamento para o documento</td>
+                    </tr>
+                    <tr>
+                        <td>next</td>
+                        <td>Fornece um link para o próximo documento da série</td>
+                    </tr>
+                    <tr>
+                        <td>nofollow</td>
+                        <td>Links para uma unendorsed documento, como um link pago.
+                        ("nofollow" é usado por Google, para especificar que a pesquisa do Google aranha não deve seguir esse link)</td>
+                    </tr>
+                    <tr>
+                        <td>noopener</td>
+                        <td>Exige que qualquer navegação contexto criado por seguir o hiperlink não deve ter um abridor de navegação contexto</td>
+                    </tr>
+                    <tr>
+                        <td>noreferrer</td>
+                        <td>Faz o referente desconhecido. Não cabeçalho referer serão incluídos quando o usuário clica no hiperlink</td>
+                    </tr>
+                    <tr>
+                        <td><prev/td>
+                        <td>O documento anterior em uma seleção</td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td>Links para uma ferramenta de pesquisa para o documento</td>
+                    </tr>
+                    <tr>
+                        <td>tag</td>
+                        <td>Uma tag (palavra-chave) para o documento atual</td>
+                    </tr>
+                </thead>
+            </table><br>
+            <p class="exemplo">
+                Exemplo prático: <br>
+                Acesse site oficial do Google clicando
+                <a href="https://www.google.com" target="_blank" rel="external">aqui✌️</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <nav id="a">
+            <p>
+                    Visite a lista dos temas em HTML
+                    <a href="#">aqui✌️</a> <br>
+            
+                Apronfunde mais sobre os links clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Documentos/index2.html" >aqui✌️</a> 
+            </p>
+        </nav>
+        <nav id="b">
+            <p>Fale conosco </p><br>
+            <p>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Index/Fotos/logo-youtube.jpg" alt="Foto de youtube" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="https://github.com/" target="_blank"><img src="../Index/Fotos/logo-github.jpg" alt="Foto de github" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Index/Fotos/logo-facebook.jpg" alt="Foto de facebook" width="30" height="40" style="border-radius: 50% 50%;"></a>
+            </p> <br>
+        </nav>
+    </footer>
+</body>
+</html>

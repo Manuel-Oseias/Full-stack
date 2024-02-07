@@ -1,0 +1,33 @@
+@charset "UFT-8";
+body{
+    background-image: linear-gradient(to right, #71B340 10%, #11270b92 110%);
+}
+main{
+    background-color: aliceblue;
+    width: 1050px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    box-shadow: 6px 9px 15px #11270B;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.escondido > span{
+    display: none;
+}
+.escondido:hover > span{
+    display: block;
+}
+.decorar:hover{
+    background-color: aqua;
+    color: black;
+    width: 60px;
+}
+.grande{
+    font-size: 40px;
+    text-align: center;
+}

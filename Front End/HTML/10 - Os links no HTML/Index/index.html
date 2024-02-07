@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo no CSS/link01.css">
+    <link rel="shortcut icon" href="./Fotos/logo.png" type="image/x-icon">
+    <title>Os links no HTML</title>
+</head>
+<body>
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>OS LINKS NO HTML</h1>
+            <div id="link">
+                <pre id="Ant">
+                    <a href="#top" id="ant">Anterior</a><a href="#top" id="post" rel="next">seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Os Hiperlinks no HTML</h2>
+            <p>
+                Links em HTML são hiperlinks.
+                Você pode clicar em um link e ir para outro documento.
+                Quando você move o mouse sobre um link, o cursor do mouse irá se transformar em um pouco de lado.
+            </p>
+            <p>
+                <strong>Nota:</strong> Uma ligação não tem que ser um texto. Um link pode ser uma imagem ou qualquer outro elemento HTML!
+            </p>
+        </section> <br>
+        <section>
+            <h2>Links HTML - Sintaxe</h2>
+            <p>
+                O HTML <span class="vermelho">&lt; a &gt;</span> tag define um hiperlink. Ele tem a seguinte sintaxe: 
+            </p>
+            <p>
+                <span class="azul">&lt;</span><span class="vermelho"> a </span> <span class="verde">href</span> <span class="azul"> = <q>url</q></span> <span class="azul">&gt;</span> <em>texto do link </em><span class="azul">&lt;</span><span class="vermelho">/a </span> <span class="azul">&gt;</span>
+
+            </p>
+            <p>
+                O atributo mais importante do que o <span class="vermelho"> &lt; a &gt;</span> elemento é o href atributo que indica o destino do link.
+            </p>
+            <p>
+                O texto do link é a parte que será visível para o leitor,clicando no link, texto, irá enviar o leitor para o URL especificado pelo endereço.
+            </p> <br>
+            <div>
+                <iframe src="../Exemplos/ex01 - sintaxe.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex01%20-%20sintaxe.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div> <br>
+            <p>
+                Por padrão, os links serão apresentadas da seguinte forma em todos os navegadores:
+            </p>
+            <ul type="square">
+                <li class="azul">Um unvisited link é sublinhado e azul</li>
+                <li class="roxo">Um link visitado é sublinhado e roxo</li>
+                <li class="vermelho">Um link ativo é sublinhado e vermelho</li>
+            </ul> <br>
+            <p>
+                <strong>Dica:</strong> Links do curso pode ser estilizado com CSS, para obter um outro olhar!
+            </p>
+            <p class="exemplo">
+                Exemplo prático:<br>
+                Acesse Google, clicando <a href="https://www.google.com" target="_blank">aqui✌️</a>
+            </p>
+        </section> <br>
+        <section>
+            <h2>Diferença entre URLs absolutos e URLs Relativos</h2> <br>
+            <p>
+                Um link local (um link local é uma página dentro do mesmo site) é especificado com uma <strong><mark>URL relativa</mark></strong> (<strong>Isto quer dizer sem a parte de <mark><q>https://www</q></mark> </strong>):
+
+            </p>
+            <div class="iframe">
+                <iframe src="../Exemplos/ex03 - absoluto e relativo.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex03%20-%20absoluto%20e%20relativo.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div><br>
+            <p class="exemplo">
+                Exemplo prático: <br>
+                Ex01 - Com URL absoluto - <a href="https://www.google.com" target="_blank">aqui✌️</a> <br>
+                Ex02 - Com URL relativo - <a href="#" target="_blank">aqui✌️</a>
+            </p><br>
+        </section>
+        <section>
+            <h2> Usar uma Imagem como um Link no HTML</h2>
+            <p>
+                Para usar uma imagem como um link, basta colocar a <span class="vermelho"> &lt; img &gt;</span> codigo dentro da tag <span class="vermelho"> &lt; a &gt;</span>
+            </p><br>
+            <div class="if">
+                <iframe src="../Exemplos/ex04 - imagem.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex04%20-%20imagem.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div><br>
+            <p class="exemplo">
+                Exemplo prático: <br>
+                Clina numa dessas imagens, vai acessar os respetivos sites:<br>
+    
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Fotos/logo-facebook.jpg" alt="Foto de youtube" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="https://github.com/" target="_blank"><img src="../Fotos/logo-github.jpg" alt="Foto de github" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Fotos/logo-youtube.jpg" alt="Foto de facebook" width="30" height="40" style="border-radius: 50% 50%;"></a>
+            </p>
+        </section><br>
+        <section>
+            <h2>Link para um Endereço de e-Mail</h2>
+            <p>
+                Usar <span class="vermelho">mail</span> dentro: dentro do <span class="vermelho">href</span> atributo para criar um link que abre o e-mail do usuário do programa (para deixá-los enviar um novo e-mail): 
+            </p><br>
+            <div class="if">
+                <iframe src="../Exemplos/ex05 - mail.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex05%20-%20mail.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div> <br>
+            <p class="exemplo"> 
+                Exemplo prático: <br>
+                Envia <a href="quaquerpessoa@email.com">e-mail aqui</a>
+            </p>
+        </section><br>
+        <section>
+            <h2>Os links com Títulos</h2>
+            <p>
+                O <span class="vermelho">title</span> atributo especifica informação extra sobre um elemento. A informação é frequentemente apresentado como um texto de dica de ferramenta quando o rato passa sobre o elemento.
+            </p><br>
+            <div class="if">
+                <iframe src="../Exemplos/ex06 - titulo.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex06%20-%20titulo.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div><br>
+            <p class="exemplo">
+                Exemplo prático:<br>
+
+                Aproxima o mouse no link onde está escrito <q>aqui✌️</q> uma mensagem irá aparecer. <br>
+                    
+                Ex - Acesse Gooogle <a href="https://www.google.com" target="_blank" title="Motor de pesquisa">aqui✌️</a></p><br>
+            </p>
+        </section>
+        <section>
+            <h2>Botão como um Link</h2>
+            <p>
+                Para usar um botão HTML como um link, você tem que adicionar algum código JavaScript. <br>
+
+                O JavaScript permite que você especifique o que acontece em determinados eventos, tais como o clique de um botão:
+            </p><br>
+            <div class="if">
+                <iframe src="../Exemplos/ex07 - botao.html" frameborder="0" class="iframe">
+                    <p>
+                        A imagem carregada não é compativel com seu navegador, se quiser ver a imagem, por favor clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/ex07%20-%20botao.html" target="_blank">aqui ✌️</a>
+                    </p>
+                </iframe>
+            </div><br>
+            <p class="exemplo">
+                Exemplo prático: <br>
+                <mark> Lembrando que o link não vai funcionar pelo facto de não termos nenhum documento armazenado no JavaScript </mark><br>
+                Ex - 👉 <button>Mensagem que vai aparecer no botão</button>
+            </p>
+        </section> <br>
+        <aside>
+            <h2>Os links externos</h2>
+            <p>Os links externos são aqueles links que não fazem parte do nosso repositório local.</p>
+            <ul>
+                Recua-se na pasta anterior no HTML da seguintes maneiras: <br>
+
+                <li>Para 2 pastas: <strong><q>../</q></strong> e usa-se teclado  <strong><span class="vermelho">CTRL + barra de espaço</span></strong></li>
+
+                <li>Para 1 pasta: <strong><q>./</q></strong> e usa-se teclado  <strong><span class="vermelho">CTRL + barra de espaço</span></strong></li>
+
+                <li>Na mesma pasta: usa-se teclado <strong><span class="vermelho">CTRL + barra de espaço</span></strong></li>
+
+                <li>Uma pasta por dentro: <strong><q>/</q></strong> e usa-se teclado  <strong><span class="vermelho">CTRL + barra de espaço</span></strong></li>
+
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <nav id="a">
+            <p>
+                    Visite a lista dos temas em HTML
+                    <a href="#">aqui✌️</a> <br>
+            
+                Apronfunde mais sobre os links clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/10%20-%20Os%20links%20no%20HTML/Exemplos/index2.html" >aqui✌️</a> 
+            </p>
+        </nav>
+        <nav id="b">
+            <p>Fale conosco </p><br>
+            <p>
+                <a href="https://www.youtube.com/" target="_blank"><img src="Fotos/logo-youtube.jpg" alt="Foto de youtube" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="https://github.com/" target="_blank"><img src="Fotos/logo-github.jpg" alt="Foto de github" width="30" height="40" style="border-radius: 50% 50%;"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="Fotos/logo-facebook.jpg" alt="Foto de facebook" width="30" height="40" style="border-radius: 50% 50%;"></a>
+            </p> <br>
+        </nav>
+    </footer>
+</body>
+</html>

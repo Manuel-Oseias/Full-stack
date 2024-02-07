@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes em CSS</title>
+    <link rel="shortcut icon" href="../Módulo 02/Fotos/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="psaudo.css">
+</head>
+<body>
+    <main>
+        <h1>Pseudo-classes em CSS</h1>
+        <p>
+            
+            Existe duas maneiras de usar pseudo dentro do CSS. <br>
+            <ul>
+                <li><strong>Pseudo normal</strong></li>
+                <li><strong>Pseudo Child</strong></li>
+            </ul>
+            <ol>
+                <h2><strong><li>PSEUDO NORMAL</li></strong></h2>
+                <p>
+                    Existe um comando chamado de <span class="interno"><strong>houver</strong></span> pode ser usado para modificar o estilo de qualquer tag quando passar a mouse em cima. <br>
+                    
+                    Pode se criar a forma <span class="interno"><strong><q>hover</q></strong></span> de varias maneiras.<br>
+                    <ul>
+                        <strong><li>Forma internal</li></strong>
+                        <strong><li>Forma external</li></strong>
+                    </ul>
+                </p>
+                <ol type="a">
+                    <strong><li class="forma">Forma internal</li></strong><br>
+                    Cria-se qualquer pseudo dentro do CSS na forma interna da seguinte maneira: <br><br>
+                    <pre>
+                        &lt;style&gt;
+                        {
+                            tag(h,p,div, body,span etc...): <mark>hover</mark>
+                            {
+                                background-color: nome do fundo em ingles ou código hexadecimal
+                                color:nome da cor em ingles ou código hexadecimal
+                            }
+                        }
+                    </pre>
+                    <div class="interno">
+                        <p class ="negrito">
+                            Exemplo usando hover <br>
+                            Quando passará a mousse aqui em cima, a cor da letra mudará 😍, EXPERIMENTA!!!
+                        </p>
+                    </div> <br>
+                    <strong><li>Forma external</li></strong><br>
+                    Cria-se qualquer pseudo dentro do CSS na forma externa da seguinte maneira: <br><br>
+                    <pre>
+                        @charset "UTF-8"
+                        body(h,p,div, span etc...): <mark>hover</mark>
+                        {
+                            background-color: nome da cor em ingles ou código hexadecimal
+                        }
+                    </pre>
+                </ol>
+                <h2><strong><li>PSEUDO CHILD</li></strong></h2>
+                A forma child é traduzido como a forma criança, serve para esconder um texto ou estilo por debaixo de outro texto. Pode se criar a forma <span class="interno"><strong><q>child
+                </q></strong></span> de varias maneiras.<br><br>
+                <ul>
+                    <strong><li>Forma internal</li></strong>
+                    <strong><li>Forma external</li></strong>
+                </ul><br>
+                <ol type="a">
+                    <strong><li class="forma">Forma internal</li></strong><br>
+
+                    Cria-se qualquer pseudo <span class="interno">child </span>dentro do CSS na forma interna da seguinte maneira: <br><br>
+
+                    <pre>
+                        &lt;style&gt;
+                        {
+                            tags(h,p,div,body,span etc...): <mark>&gt;outros tags que ficará escondido(h,p, div, span, etc...)</mark>
+                            {
+                                display:none; --&lt; <strong>Isto para esconder a mensagem.</strong>
+                            }
+
+
+                            tags(h,p,div,body,span etc...): <mark>&gt;outros tags que ficará escondido(h,p, div, span, etc...)</mark>
+                            {
+                                display:block; --&lt; <strong>Isto para apresentar a mensagem.</strong>
+
+                                background-color: nome do fundo em ingles ou código hexadecimal
+                                color:nome da cor em ingles ou código hexadecimal
+                            }
+                        }
+                    </pre>
+
+                    <div class="escondido">
+                        Exemplo usando child <br>
+                        Quando passará a mousse em cima do texto, <strong>UMA MENSAGEM ESCONDIDA APARECERÁ</strong>
+                        <p>
+                            VOCÊ É DUVIDOSO! VIU E ACREDITOU?
+                        </p>
+                        
+                    </div><br>
+                    <strong><li class="forma">Forma external</li></strong><br>
+
+                    Cria-se qualquer pseudo <span class="interno">child </span>dentro do CSS na forma external da seguinte maneira: <br><br>
+
+                    <pre>
+                        @charset "UTF-8";
+
+                        tags(h,p,div,body,span etc...): <mark>&gt;outros tags que ficará escondido(h,p, div, span, etc...)</mark>
+
+                            {
+                                display:none; --&lt; <strong>Isto para esconder a mensagem.</strong>
+                            }
+
+
+                            tags(h,p,div,body,span etc...): <mark>&gt;outros tags que ficará escondido(h,p, div, span, etc...)</mark>
+
+                            {
+                                display:block; --&lt; <strong>Isto para apresentar a mensagem.</strong>
+
+                                background-color: nome do fundo em ingles ou código hexadecimal
+                                color:nome da cor em ingles ou código hexadecimal
+                            }
+                    </pre>
+                    <p id="fim">
+                        👉# 👉 id <br>
+                        👉. 👉 class <br>
+                        👉: 👉 pseudo <br>
+                        👉:: 👉 pseudo element <br>
+                        👉> 👉 children <br>
+                    </p>
+                </ol>
+
+            </ol>
+        </p>
+    </main>
+    <ul>
+        <h2>Material</h2>
+            <li>
+                Para ter acesso ao material, pode clicar <a href="../Módulo 02/15 -Seletores personalizados.pdf" target="_blank" rel="external">aqui</a>
+            </li>
+        <h2>Os links</h2>
+        <li>Para ter acesso ao nosso playlist dos links, clica <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/link%20todos%20exercicios/modulo1.html" target="_blank" rel="external">aqui</a></li>
+    </ul>
+    
+</body>
+</html>

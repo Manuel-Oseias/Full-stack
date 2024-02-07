@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Fotos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Estilos/estilo.css">
+    <title>Elementos no HTML </title>
+</head>
+<body>
+    <header>
+        <h1>Elementos no HTML </h1>
+        <p id="Ant">
+            <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/02-HTML%20Basic%20Examples/Documentos/htmlbasico.html" target="_blank">Anterior</a>
+        </p>
+        <p id="Seg">
+            <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/atributos.html" target="_blank">Seguintes</a>
+        </p>
+    </header>
+    <main>
+        <p>
+            Um elemento HTML é definido por uma tag de início, algum conteúdo, e uma marca de fim.
+        </p>
+        <article>
+            <h2>Elementos no HTML</h2>
+            <p>
+                O HTML do elemento é tudo, desde o início marca o fim da tag: <br><br>
+                &lt;<span class="vermelho">tagname</span>&gt;Conteúdo aqui...&lt;<span class="vermelho">/elemento</span>&gt; <br> <br>
+
+                Exemplos de alguns elementos HTML: <br>
+                &lt;<span>h1</span>&gt;Meu Primeiro Título&lt;<span>/h1</span>&gt;
+                &lt;<span class="vermelho">p</span>&gt;Meu primeiro parágrafo.&lt;<span class="vermelho">/p</span>&gt; <br><br>
+
+                Nota: Alguns elementos HTML sem conteúdo (como o &lt;<span class="vermelho">br</span>&gt; elemento). Esses elementos são chamados de elementos vazios. Elementos vazios não têm uma marca de fim!
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag de início</th>
+                        <th>Conteúdo do elemento</th>
+                        <th>End tag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Meu Primeiro Título</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Meu primeiro parágrafo.</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>nenhum - serve para quebrar linhas</td>
+                        <td>nenhum - serve para quebrar linhas</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <article>
+            <h2>Aninhamento dos Elementos no HTML</h2>
+            <p>
+                👉Elementos HTML podem ser aninhados (isto significa que os elementos podem conter outros elementos).<br>
+
+                👉Todos os documentos HTML consistem aninhadas elementos HTML.<br>
+
+                👉O exemplo a seguir contém quatro elementos HTML: <br>
+                <span class="vermelho">
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;
+                </span>
+            </p>
+            <p id="esquerda">
+                <iframe src="alinhamento.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/03-HTML%20Elementos/Documentos/alinhamento.html" target="_blank" >aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </article>
+        <article>
+            <h3>Exemplo Explicado</h3>
+            <p>
+                O <span class="vermelho">&lt;html&gt;</span> elemento é o elemento raiz e define todo o documento HTML.
+
+                Ele tem uma tag inicial <span class="vermelho">&lt;html&gt;</span> e uma tag de fim <span class="vermelho">&lt;/html&gt;</span>.
+
+                Em seguida, no interior do <span class="vermelho">&lt;html&gt;</span> elemento, existe um <span class="vermelho">&lt;body&gt;</span> elemento:
+            </p>
+            <picture>
+                <source media="(min-width: 900px)" srcset="../Fotos/foto02.png">
+                <source media="(min-width: 450px)" srcset="../Fotos/foto01.png">
+                <img src="../Fotos/foto02.png" alt="Explicação do body em html">
+            </picture>
+            <p>
+                O <span class="vermelho"> &lt;body&gt;
+                </span> elemento define o documento do corpo.
+
+                Ele tem uma tag inicial <span class="vermelho"> &lt;body&gt;
+                </span> e uma tag de fim <span class="vermelho">&lt;/body&gt;</span>.
+                    
+                Em seguida, no interior do <span class="vermelho"> &lt;body&gt;
+                </span> elemento, há dois outros elementos: <span class="vermelho"> &lt;h1&gt;</span> e <span class="vermelho">&lt;p&gt;</span>:
+            </p>
+            <picture>
+                <source media="(min-width: 900px)" srcset="../Fotos/p-t02.png">
+                <source media="(min-width: 450px)" srcset="../Fotos/p-t01.png">
+                <img src="../Fotos/p-t01.png" alt="Explicação do body em html">
+            </picture>
+            <p>
+                O <span class="vermelho">
+                    &lt;h1&gt;
+                </span> elemento define um título. Ele tem uma tag inicial <span class="vermelho">
+                    &lt;h1&gt;
+                </span> e uma tag de fim <span class="vermelho">&lt;/h1&gt;</span>:
+            </p>
+            <picture>
+                <source media="(min-width: 900px)" srcset="../Fotos/t02.png">
+                <source media="(min-width: 450px)" srcset="../Fotos/t01.png">
+                <img src="../Fotos/t01.png" alt="Explicação do body em html">
+            </picture>
+            <p>
+                O <span>&lt;p&gt;</span> elemento define um parágrafo. Ele tem uma tag inicial <span>&lt;p&gt;</span>  e uma tag de fim <span>&lt;/p&gt;</span> 
+            </p>
+            <picture>
+                <source media="(min-width: 900px)" srcset="../Fotos/p02.png">
+                <source media="(min-width: 450px)" srcset="../Fotos/p01.png">
+                <img src="../Fotos/p01.png" alt="Explicação do body em html">
+            </picture>
+        </article>
+         <aside>
+            <p>
+                HTML Não é Sensível a Maiúsculas e minúsculas
+                Tags HTML não são sensíveis a maiúsculas e minúsculas: <span>&lt;/p&gt;</span>  significa o mesmo <span>&lt;/P&gt;</span> <br><br>
+
+                O padrão HTML, não requer minúsculas marcas, mas W3C recomenda minúsculas em HTML, e exige minúsculas para mais rigorosas tipos de documento, como XHTML.
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <address>
+            <p>
+                Este tutorial segue o mais recente padrão HTML5.
+                para saber mais sobre as fontes pode clicar 
+                <a href="https://www.w3schools.com/" target="_blank" rel="follow">aqui🔗</a>
+            </p>
+        </address><br>
+        <nav>
+            Para acessar playlist, clica <a href="#" target="_blank">aqui🔗</a> <br><br>
+
+            Fale conosco: <br>
+            <p>
+                <a href="#" class="id">Facebook</a>
+                <img src="../Fotos/facebook.png" alt="Foto de facebook" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Github</a>
+                
+                <img src="../Fotos/github.png" alt="Foto de github" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Instagram</a>
+                
+                <img src="../Fotos/instagram.png" alt="Foto de instagram" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Telegram</a>
+                
+                <img src="../Fotos/telegram.jpeg" alt="Foto de telegram" class="id">
+            </p>
+        </nav>
+    </footer>
+</body>
+
+</html>

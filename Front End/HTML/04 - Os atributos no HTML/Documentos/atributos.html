@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Fotos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Estilos/estilo.css">
+    <title>HTML Atributos</title>
+</head>
+<body>
+    <header>
+        <h1> Os Atributos no HTML</h1>
+        <p id="Ant">
+            <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/03-HTML%20Elementos/Documentos/elementoshtml.html" target="_blank">Anterior</a>
+        </p>
+        <p id="Seg">
+            <a href="#" target="_blank">Seguintes</a>
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Atributos HTML</h2>
+            <p>
+                Atributos de HTML fornecer informações adicionais sobre os elementos do HTML.
+            </p>
+            <ul>
+                <li>Todos os elementos HTML podem ter atributos</li>
+                <li>Atributos fornecem informações adicionais sobre os elementos</li>
+                <li>Atributos são sempre especificados na tag inicial</li>
+                <li>Atributos geralmente vêm em pares nome/valor, como: nome="valor"</li>
+            </ul>
+        </section>
+        <section>
+            <h2>O Atributo href</h2>
+            <p>
+                A <span class="vermelho">&lt;a&gt;</span> tag define um hiperlink. O <span class="vermelho">href</span>  atributo especifica o URL da página que o link vai para: <br>
+                Exemplo:
+            </p>
+            <p class="esquerda">
+                <iframe src="href-atributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/href-atributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+            <p>
+                Você vai aprender mais sobre links em nossos <a href="#">Links HTML capítulo</a>.
+            </p>
+        </section>
+        <section>
+            <h2>O Atributo src</h2>
+            <p>
+                O <span class="vermelho">&lt;img&gt;</span> tag é utilizada para inserir uma imagem em uma página HTML. O <span class="vermelho">src</span> atributo especifica o caminho para a imagem a ser exibida:
+            </p>
+            <p>
+                Existem duas formas de especificar o URL no src atributo: <br><br>
+
+                <strong>1. URL absoluto </strong> - Links para uma imagem externa que está hospedado em outro site. Exemplo: <span class="vermelho">src="https://www.w3schools.com/images/img_girl.jpg".</span> <br><br>
+
+                <strong>Notas:</strong> imagens Externas podem estar sujeitas a direitos de autor. Se você não obter permissão para usá-lo, você pode ser uma violação das leis de direitos autorais. Além disso, você não pode controlar as imagens externas; ele pode, de repente, ser removida ou alterada. <br><br>
+
+                <strong>2. URL relativa</strong> - Links para uma imagem que está hospedado dentro do site. Aqui, o URL não incluir o nome de domínio. Se a URL começa sem uma barra, ele será relativo para a página atual.<br>
+                
+                Exemplo: <span class="vermelho">src="img_girl.jpg".</span> <br><br>
+                
+                Se a URL começa com uma barra, será em relação ao domínio, Exemplo: <span class="vermelho">src="/images/img_girl.jpg"</span>.<br>
+
+                Dica: é quase sempre melhor usar URLs relativos. Eles não vão quebrar se você alterar o domínio.
+            </p>
+            <p class="esquerda">
+                <iframe src="src-atributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/src-atributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>Os Atributos de largura e altura</h2>
+            <p>
+                A <span class="vermelho">&lt;img&gt;</span> etiqueta deverá conter, também, o <span class="vermelho">width</span> e de <span class="vermelho">height</span> atributos, que especificam a largura e a altura da imagem (em pixels):
+            </p>
+            <p class="esquerda">
+                <iframe src="larguraealtura.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/larguraealtura.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>O Atributo "alt"</h2>
+            <p>
+                A necessária <span class="vermelho">alt</span> atributo para a <span class="vermelho">&lt;img&gt;</span> marca especifica um texto alternativo para uma imagem, se a imagem, por algum motivo, não pode ser exibida. Isto pode ser devido a uma conexão lenta, ou um erro no <span class="vermelho">src</span> atributo, ou se o usuário utiliza um leitor de tela. <br><br>
+
+                Você vai aprender mais sobre imagens em nossas <a href="#">Imagens HTML capítulo.</a>
+            </p>
+            <p class="esquerda">
+                <iframe src="alt-atributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/alt-atributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>O Atributo de estilo</h2>
+            <p>
+                O <span class="vermelho">style</span> atributo é usado para adicionar estilos a um elemento, tais como cor, tipo de letra, tamanho e mais. <br><br>
+
+                Você vai aprender mais sobre os estilos de nossa <a href="#">Estilos HTML capítulo.</a>
+            </p>
+            <p class="esquerda">
+                <iframe src="estilo-atributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/estilo-atributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>O Atributo lang</h2>
+            <p>
+                Você sempre deve incluir o <span class="vermelho">lang </span>atributo dentro da <span class="vermelho">html</span>html> tag, para declarar o idioma da página da Web. Este destina-se a ajudar os mecanismos de pesquisa e navegadores.
+            </p>
+            <picture>
+                <source media="(min-width: 500px)" srcset="../Fotos/lang.png">
+                <source media="(min-width: 250px)" srcset="../Fotos/lang01.png">
+                <img src="../Fotos/lang.png" alt="Como atribuir línguas">
+            </picture>
+            <p>
+                Códigos de país também pode ser adicionado ao código de idioma no <span class="vermelho">lang</span> atributo. Assim, os dois primeiros caracteres definir o idioma da página HTML, e os dois últimos caracteres definir o país. <br><br>
+
+                O exemplo a seguir especifica o inglês como o idioma e os Estados Unidos como o país: <br><br>
+
+                <span><strong>lang = "en-US</strong></span> <br>
+
+                Você pode ver todos os códigos de idiomas na nossa <a href="#">Linguagem HTML Código de Referência.</a>
+            </p>
+        </section>
+        <section>
+            <h2>O Atributo title</h2>
+            <p>
+                O <span class="vermelho">title</span> atributo define uma informação extra sobre um elemento.
+
+                O valor do atributo de título será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:
+            </p>
+            <p class="esquerda">
+                <iframe src="titulo-atributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/titulo-atributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>Sugerimos: Use Sempre Letras Minúsculas Atributos</h2>
+            <p>
+                O padrão HTML, não requer minúsculas os nomes de atributo. <br><br>
+
+                O atributo title (e todos os outros atributos) podem ser escritas com letras maiúsculas ou minúsculas, como título ou TÍTULO. <br><br>
+
+                No entanto, o W3C recomenda minúsculas atributos em HTML, e exige minúsculas atributos mais rigorosas tipos de documento, como XHTML. <br><br>
+            </p>
+        </section>
+        <section>
+            <h2>Sugerimos: Sempre Cotação De Valores De Atributo</h2>
+            <p>
+                O padrão HTML, não necessitam de aspas em torno de valores de atributo. <br><br>
+
+                No entanto, o W3C recomenda citações em HTML, e demandas de cotações para mais rigorosas tipos de documento, como XHTML. <br><br>
+            </p>
+            <p class="esquerda">
+                <iframe src="comousaratributo.html" frameborder="0" width="450px" height="200px">O seu navegador não é compativel com essa imagem. Por favor, clique <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack%20online/Full-stack-online/HTML/04%20-%20HTML%20Atributos/Documentos/comousaratributo.html" target="_blank">aqui🔗</a> para vizualizar a imagem </iframe>
+            </p>
+        </section>
+        <section>
+            <h2>Simples ou Aspas Duplas?</h2>
+            <p>
+                Aspas duplas em torno de valores de atributo são os mais comuns em HTML, mas aspas simples também pode ser usado. <br><br>
+
+                Em algumas situações, quando o valor do atributo em si contém aspas, é necessário o uso de aspas simples: <br>
+            </p>
+        </section>
+        <aside>
+            <h2>Resumo Do Capítulo</h2>
+            <ul>
+                Todos os elementos HTML podem ter atributos
+
+                O href atributo <span class="vermelo">a</span> especifica o URL da página que o link vai para
+
+                O src atributo <span class="vermelo">img</span> especifica o caminho para a imagem a ser exibida
+
+                O <span class="vermelo">width</span> e <span class="vermelo">height</span> atributos de <span class="vermelo">img</span> fornecer informações sobre o tamanho de imagens
+
+                O <span class="vermelo">alt</span> atributo <span class="vermelo">img</span> fornece um texto alternativo para uma imagem
+
+                O <span class="vermelo">style</span> atributo é usado para adicionar estilos a um elemento, tais como cor, tipo de letra, tamanho, e mais
+
+                O <span class="vermelo">lang </span>atributo da <span class="vermelo">html</span> tag declara o idioma da página da Web
+
+                O <span class="vermelo">title</span> atributo define uma informação extra sobre um elemento
+
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <address>
+            <p>
+                Este tutorial segue o mais recente padrão HTML5.
+                para saber mais sobre as fontes pode clicar 
+                <a href="https://www.w3schools.com/" target="_blank" rel="follow">aqui🔗</a>
+            </p>
+        </address><br>
+        <nav>
+            Para acessar playlist, clica <a href="#" target="_blank">aqui🔗</a> <br><br>
+
+            Fale conosco: <br>
+            <p>
+                <a href="#" class="id">Facebook</a>
+                <img src="../Fotos/facebook.png" alt="Foto de facebook" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Github</a>
+                
+                <img src="../Fotos/github.png" alt="Foto de github" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Instagram</a>
+                
+                <img src="../Fotos/instagram.png" alt="Foto de instagram" class="id"><br>
+            </p>
+
+            <p>
+                <a href="#" class="id">Telegram</a>
+                
+                <img src="../Fotos/telegram.jpeg" alt="Foto de telegram" class="id">
+            </p>
+        </nav>
+    </footer>
+    
+</body>
+</html>
