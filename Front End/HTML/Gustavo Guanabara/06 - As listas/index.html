@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens do módulo 01/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS do módulo 01/modulo1.css">
+    <title>Tipo da lista</title>
+</head>
+<body>
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>TIPOS DE LISTA NO HTML</h1>
+            <div id="link">
+                <pre>
+                    <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/05%20-%20Manupular%20os%20textos/index.html" id="ant">Anterior</a><a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/07%20-%20Os%20links/index.html" id="post" rel="next">Seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Tipo da lista</h1>
+        <p>
+            Existe 2 tipos de listas dentro da linguagem html. <br>
+            <ol>
+                <li>As listas ordenadas</li>
+                <li>As listas não ordenadas</li>
+            </ol>
+            <ol>
+                <dt><h2><li>As listas ordenadas</li></h2></dt>
+                A lista não ordenada são aquelas que a sequencia faz todo sentido ou seja quando desenvolvidor precisa de enumerar. Para colocar listas ordenadas basta colocar a tag. 👉<br><br>
+                <dd>
+                    <mark> &lt;ol&gt;</mark> e para colocar a enumeração deve se colocar:<br>
+                    <mark>&lt;li &gt;</mark>Lista será actualizada automáticamente <mark><em>Nota que deve ser feito em cada linha</em></mark><br>
+                    <mark>&lt;/ol&gt;</mark> <br>
+                </dd> <br>
+                <ol>
+                    Ex01: <br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ol><br><br>
+                Para formatar a lista ordenada é necessário colocar a tag <br> <mark> &lt;ol type ="Tipo pode ser (Numerica, alfabetico, etc....)" start = "Onde quer que a sua lista começa." &gt; a lista &lt;/ol&gt;</mark> <br> <br>
+                <ol type="a" start="3">
+                    Ex02: <br><br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ol> <br><br>
+                <ol type="I" start="5">
+                    Ex03: <br><br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ol><br><br>
+                <dt><h2><li>As listas não ordenadas</li></h2></dt>
+                A lista não ordenada são aquelas que a sequencia não faz sentido ou seja não precisa de enumerar. Para criar lista não ordenadas usa-se a tag: <br><br>
+                <dd>
+                    <mark>&lt;ul&gt;</mark> e para colocar a enumeração deve se colocar<br>
+                    <mark>&lt;li &gt;</mark>Lista será actualizada automáticamente,
+                    <mark><em> Nota que deve ser feito em cada linha</em></mark><br>
+                    <mark> &lt;/ul&gt;</mark> <br><br>
+                    Faz-se das seguintes maneiras para formatar as listas não ordenadas:<br> <mark> &lt;ul type =<q>Tipo pode ser <strong>(cirlcle, disc, square)</strong> </q> &gt; a lista &lt;/ul&gt;</mark> <br>
+                </dd><br>
+                <ul type="cirle">
+                    Ex01: <br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ul><br>
+                <ul type="square">
+                    Ex02: <br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ul><br>
+                <ul type="disc">
+                    Ex03: <br>
+                    <li>Acordar</li>
+                    <li>Orar</li>
+                    <li>Escovar dentes</li>
+                    <li>Enviar sms para minha baby</li>
+                </ul><br>
+                <ol>
+                    Existe stilo especifico para formata-la:
+                    <li>disk</li>
+                    <li>circle</li>
+                    <li>square</li>
+                </ol>
+                <dt><h2><li>Definição das listas</li></h2></dt>
+                <dd>
+                    Existe duas maneiras de colocar uma definição usando os codigos  <br><mark>&lt;dt&gt; Aqui coloca-se o termo/ tema &lt;/dt&gt;</mark>
+                    <br><mark>&lt;dd&gt; Aqui coloca-se descrição/definição &lt;/dd&gt;</mark><br><br>
+                </dd>
+                <dt>Ex: O que internet fala sobre Deus</dt>
+                <dd>
+                    As concepções abraâmicas de Deus incluem a visão cristã da Trindade, a definição cabalística de Deus do misticismo judaico, e os conceitos islâmicos de Deus.
+                </dd>
+            </ol>
+        </p>
+    </main>
+    <footer>
+        <nav id="a">
+            <p>
+                Visite a lista dos temas em HTML
+                <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/Todos%20os%20links/links.html" target="_blank" title="TODOS LINKS DO HTML" rel="next">aqui</a>✌️ <br>
+            
+                Veja exercícios sobre as listas clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/06%20-%20As%20listas/ex01%20-%20favoritoteams.html" target="_blank" rel="next">aqui</a>✌️
+            </p>
+        </nav><br>
+        <nav id="b">
+            <p>
+                Fale conosco: <br>
+                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+            </p>
+        </nav>
+    </footer>
+</body>
+</html>

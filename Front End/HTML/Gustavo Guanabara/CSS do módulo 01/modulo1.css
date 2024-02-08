@@ -1,0 +1,190 @@
+@charset "UFT-8";
+@font-face {
+    font-family: 'normal';
+    src: url('normal.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'titulo';
+    src: url('titulo.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'estilo';
+    src: url('estilo.ttf') format('opentype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: 0px 0px 160px;
+}
+header > div{
+    position: relative;
+}
+header > div > h1 {
+    position: fixed;
+    top: -10px;
+    margin: 10px 0px 0px -30px;
+    padding: 30px;
+    width: 100vw;
+    height: 45px;
+    font-family: 'titulo', cursive;
+    text-align: center;
+    background-color:#f68f94;
+}
+header > div > div{
+    position: relative;
+}
+header > div > div > pre{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    top: 105px;
+    background-color:#155154;
+}
+header > div > div > pre > a#ant{
+    position: absolute;
+    left: 20px;
+    width: 80px;
+    height: 26px;
+    padding: 12px;
+    font-family: 'normal';
+    font-size: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+}
+header > div > div > pre > a#post{
+    position: absolute;
+    right: 40px;
+    width: 80px;
+    height: 26px;
+    padding: 12px;
+    font-family: 'normal';
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+header > div > div > pre > a#ant:hover{
+    font-family: 'estilo', cursive;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.498);
+    color: #f68f94;
+}
+header > div > div > pre > a#post:hover{
+    font-family: 'estilo', cursive;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.498);
+    color:#f68f94;
+}
+main{
+    font-size: 18px;
+    padding: 10px;
+    margin: -10px auto;
+    line-height: 30px;
+}
+main table{
+    width: 600px;
+    border-collapse: collapse;
+    text-align: center;
+}
+main th, td {
+    border: 2px solid black;
+    padding: 10px;
+}
+main caption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+}
+main h2{
+    font-family: 'normal';
+    font-size: 1.7em;
+    text-align: left;
+    padding: 5px;
+    width: 400px;
+    background-image: linear-gradient(to right, whitesmoke, #f68f94, whitesmoke);
+}
+main h1{
+    font-family: 'normal';
+    font-size: 1.7em;
+    text-align: left;
+    padding: 5px;
+    background-image: linear-gradient(to right, whitesmoke, #f68f94, whitesmoke);
+    width: 400px;
+}
+main h3{
+    padding: 20px;
+}
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+}
+main ol, ul{
+    padding: 20px;
+}
+main mark{
+    font-family: 'normal', cursive;
+    border-radius: 15px;
+    background-color: #ffc6ac54;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ffc6ac54;
+    color: black;
+}
+main a:hover{
+    font-family: 'estilo', cursive;
+    font-weight: bold;
+    background-color: rgba(50, 45, 125, 0.283);
+    color: #155154;
+}
+footer {
+    padding: 20px;
+    margin: -15px 0px 0px 0px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f68f94;
+}
+footer > nav#a{
+    height: 60px;
+    padding: 15px;
+    margin: -20px;
+    background-color: #155154;
+    color: rgba(245, 245, 245, 0.655);
+}
+footer > nav#b{
+    font-family: 'estilo', cursive;
+    line-height: 50px;
+}
+footer > nav > p > a{
+    font-weight: bold;
+    color:#f68f94;
+    background-color: #155154(226, 148, 45, 0.532);
+}
+footer > nav > p > a:hover{
+    background-color: #f68f94;
+    color: black;
+}
+footer > nav > p > a > img{
+    padding: 6px;
+    border-radius: 50% 50%;
+    width:30px;
+    height:40px;
+}
+footer > nav > p > a >img.imagem:hover{
+    width: 50px;
+    height: 56px;
+}
+.q {
+    background-color: gray;
+}
+.q1 {
+    text-align: left;
+    background-color: gray;
+}

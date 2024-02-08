@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens do módulo 01/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS do módulo 01/modulo1.css">
+    <style>
+        main h2{
+            text-align: left;
+        }
+    </style>
+    <title>Estilos CSS internos</title>
+</head>
+<body>
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>Estilos CSS internal</h1>
+            <div id="link">
+                <pre>
+                    <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" id="ant">Anterior</a><a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" id="post" rel="next">Seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>
+            A linguagem CSS3 é a linguagem mais especializado no estilo do site, fonte, imagem, etc.. enquanto html está intricicamente ligado com a semântica(texto). Para colocar estilo dentro do CSS3, usa-se 3 maneira básica que são:
+        </p>
+        <ol>
+            <strong>
+                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" target="_blank" rel="next" title="estilo entre as linhas">inline</a></li>
+
+                <li>Estilos CSS <abbr title="estilo interno">internal</abbr></li>
+    
+                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next" title="estilo externo">external</a></li>
+            </strong>
+        </ol>
+        <ol start="2">
+            <h2 style="text-align: left;"><li>Estilos CSS internal </li></h2>
+            <p>
+                Quando estuda-se estilos inline, surge a necessidade de melhorar a maneira de criar estilos, porque uma das desvantagem dos estilos inline é a poluição do código html
+            </p>
+            <p>
+                Para efectuar estilo interno, não será mais necessário colocar estilo em cada linha do nosso código html, basta configurar no corpo do nosso projeto, tudo será organizado. 
+            </p>
+                Porém esse método de colocar estilo dentro do corpo faz com que o nosso corpo fica mais grande e longo.
+            </p>
+            <p>
+                Para inserir qualquer estilo interno, basta criar um estilo personalizada dentro do nosso html.
+            </p>
+        </ol>
+        <p>
+            &lt;style&gt; <br>         
+            body { <br>
+                background-color: Nome da cor em ingles.<br>
+                font-family: Tipo de letra<br>
+                fonte-size: tamanho da letra. <br>
+            } <br>
+            h1 {<br>
+                background-color: Nome da cor em ingles.<br>
+                font-family: Tipo de letra<br>
+                fonte-size: tamanho da letra<br>
+            }<br>
+        &lt;/style&gt;<br>
+        </p>
+    </main><br>
+    <footer>
+        <nav id="a">
+            <p>
+                Visite a lista dos temas em HTML
+                <a href="#">aqui</a>✌️ <br>
+            
+                Volte no estilo inline, clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next">aqui</a></em></strong>
+            </p>
+        </nav><br>
+        <nav id="b">
+            <p>
+                Fale conosco: <br>
+                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+            </p>
+        </nav>
+    </footer>
+</body>
+</html>
