@@ -1,0 +1,17 @@
+@charset "UFT-8";
+@font-face {
+    font-family: 'Normal';
+    src: url('normal.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Titulo';
+    src: url('titulo.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Estilo';
+    src: url('estilo.ttf') format('opentype');
+}
+body{
+    font-family: Normal;
+    background-color: red;
+}
