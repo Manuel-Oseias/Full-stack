@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens do módulo 01/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS do módulo 01/modulo1.css">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>INSERIR DINÂMICAS NO HTML</h1>
+            <div id="link">
+                <pre>
+                    <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/07%20-%20Os%20links/index.html#top" id="ant">Anterior</a><a href="#top" id="post" rel="next">Seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>
+            Para carrega uma imagem dentro do seu servidor de varios tamanho, precisa do tag: <br>
+            <strong><mark><i>&lt;picture&gt;</i></mark></strong><br>
+
+            <strong>&lt; source  media = <q>(max-width:tamanho da foto em px)</q><br></strong>
+            <strong>scrset = <q> URLs da imagem </q> ype = <q>image/png&gt;</q></strong> <br><br>
+
+            <strong>&lt; source  media = <q>(min-width:tamanho da foto em px)</q><br></strong>
+            <strong>scrset = <q> URLs da imagem </q> type = <q>image/png&gt;</q></strong> <br><br>
+
+            <strong>&lt;image src =<q> URLs de imagem </q> alt = <q> comentário da imagem </q>&gt;</strong><br>
+            <strong><mark><i>&lt;picture&gt;</i></mark></strong> <br><br>
+
+            <em><mark><strong>Nota</strong> que sempre deve começar de ordem crescente ou descencente (min, media, max)</mark></em>
+        </p>
+        <p>
+            Esse exercício serve para tentar abrir em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador. <br><br>
+            <picture>
+                <source media="(max-width: 900px)" srcset="../Imagens do módulo 01/teresagrande.png" type="image/png">
+        
+                <source media="(min-width: 700px)" srcset="../Imagens do módulo 01/teresamedia.png" type="image/png">
+        
+                <img src="../Imagens do módulo 01/teresamin.png" alt="nada">
+            </picture>
+        </p>
+        <h1>Colocar audio</h1>
+        <ol>
+            <h3><li><mark>A maneira simples</mark></h3></li>
+            <p>
+                Para colocar audio basta colocar a tag <strong><i><mark>&lt;audio src="nome do audio" controls autoplay&gt; &lt;/audio&gt;</mark></i></strong> <br><br>
+        
+                Ex: <br> <audio src="../Audios do módulo 01/happybirthday.mp3" autoplay controls ></audio>
+            </p>
+            <h3><li><mark>A maneira completa</mark></li></h3>
+            <p>
+                Caso comando autoplay não funcioar, (pode usar outro formato de audio) ou pode usar seguintes tag
+                <strong><i><mark>&lt;audio width = "configurar o tamanho do arquivo" autoplay controls&gt;</mark> <br>
+                    source src = "Nome de arquivo" <br>
+                    type="audio/mpeg"<br>
+                    source src = "Nome de arquivo"<br> type="audio/ogg"<br>
+                    source src = "Nome de arquivo"<br> type="audio/wav"<br>
+                <mark>&lt;/audio&gt;</mark></i></strong>
+            </p>
+            <p>
+                Ex: <br>
+                <audio preload="metadata" controls autoplay>
+                    <source src="../Audios do módulo 01/happybirthday.mp3" type="audio/mpeg">
+                    <br>Outros formatos nao foi necesário de adicionar porque audio funcionou na normalidade.
+                </audio>
+            </p>
+        </ol>
+        <h1>Carregar video</h1>
+            <ol>
+                <li><h3>A maneira simples:</h3></li>
+                <p>
+                    Para colocar audio basta colocar a tag <strong><i><mark>&lt;audio src="nome do arquivo" controls autoplay&gt; &lt;/video&gt;</mark></i></strong><br><br>
+        
+                    Ex: <video src="happy_birthday.mp4" width="360"  height="215" autoplay></video>
+                </p>
+                <li><h3><mark>A maneira completa de se colocar video</mark></h3></li>
+                <p>
+                    <strong><i><mark>&lt;video width = "Para configurar o tamanho do arquivo" poster="Para colocar a capa da imagem do video" autoplays controls &gt;</mark>
+                        source src = "Nome de arquivo" type="video/mp4" <br>
+                        source src = "Nome de arquivo"<br> type="video/wenm"<br>
+                        source src = "Nome de arquivo"<br>
+                        type="video/ogg<br>
+                    <mark>&lt;/video&gt;</mark>
+                </p>
+                <p>
+                    Ex:
+                        <video width="360" height="215" poster="teresamin.png" autoplay controls>
+                        <source src="happy_birthday.mp4" type="video/mp4">
+                    </video>
+                </p>
+            </ol> <br><br>
+           
+        <h1>Inserindo video do Youtube</h1>
+        <p>
+            Para inserir video vindo do youtube, da seguinte maneira:
+            <ul>
+                <li>Acesse o video no youtube com autorização do autor</li>
+                <li>Procure a seta de partilhar</li>
+                <li>Procure a seta onde estará escrito incorporar</li>
+                <li>copia o URLs completo com iframe.</li>
+            </ul>
+        </p>
+        <p>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=WEt7DvvUTVICOQ3X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+    </main>
+    <footer>
+        <nav id="a">
+            <p>
+                Visite a lista dos temas em HTML
+                <a href="#">aqui</a>✌️ <br>
+            
+                Quer saber como colocar os estilos? clica <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" target="_blank">aqui</a>✌️
+            </p>
+        </nav><br>
+        <nav id="b">
+            <p>
+                Fale conosco: <br>
+                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
+
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+            </p>
+        </nav>
+    </footer>
+</body>
+</html>
