@@ -30,7 +30,7 @@ header > div > h1 {
     height: 45px;
     font-family: 'titulo', cursive;
     text-align: center;
-    background-color: #f68f94;
+    background-color:#f68f94;
 }
 header > div > div{
     position: relative;
