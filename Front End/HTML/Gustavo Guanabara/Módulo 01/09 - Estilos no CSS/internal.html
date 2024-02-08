@@ -1,77 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilos CSS internos</title>
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagens do módulo 01/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS do módulo 01/modulo1.css">
     <style>
-        body{
-            background-color: aqua;
-            font-size: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-style: oblique;
-        }
-        h1{
-            color: blue;
-        }
-        p{
-            color: rgb(206, 13, 7);
-        }
-        ol
-        {
-            color: rgb(54, 6, 188);
+        main h2{
+            text-align: left;
         }
     </style>
+    <title>Estilos CSS internos</title>
 </head>
 <body>
-    <h1>Estilos CSS</h1>
-    <p>
-        A linguagem CSS3 é a linguagem mais especializado no estilo do site, fonte, imagem, etc.. enquanto html está intricicamente ligado com a semântica(texto). Para colocar estilo dentro do CSS3, usa-se 3 maneira básica que são:
+    <header>
+        <div id="rel"></div>
+        <div id="Abs">
+            <h1>Estilos CSS internal</h1>
+            <div id="link">
+                <pre>
+                    <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" id="ant">Anterior</a><a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" id="post" rel="next">Seguintes</a>
+                </pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>
+            A linguagem CSS3 é a linguagem mais especializado no estilo do site, fonte, imagem, etc.. enquanto html está intricicamente ligado com a semântica(texto). Para colocar estilo dentro do CSS3, usa-se 3 maneira básica que são:
+        </p>
         <ol>
-            <li>Estilos CSS <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/Ex009%20-%20Estilos/index.html" target="_blank" rel="nofollow">inline</a></li>
-        
-            <li>Estilos CSS <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/Ex009%20-%20Estilos/estilo-external/index02.html" target="_blank" rel ="nofollow">external</a></li>
+            <strong>
+                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" target="_blank" rel="next" title="estilo entre as linhas">inline</a></li>
 
-            <li>Estilos CSS <abbr title="interno ou no cabeça">internal</abbr></li>
+                <li>Estilos CSS <abbr title="estilo interno">internal</abbr></li>
+    
+                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next" title="estilo externo">external</a></li>
+            </strong>
         </ol>
-    </p>
-    <p>
         <ol>
-            <dt><strong><h2>Estilos CSS internal</h2></strong></dt>
-            <dd>
-                Quando estuda-se estilos inline, surge a necessidade de melhorar a maneira de criar estilos, porque uma das desvantagem dos estilos inline é a poluição do código html <br>
-
-                Para efectuar estilo interno, não será mais necessário colocar estilo em cada linha do nosso código html, basta configurar no corpo do nosso projeto, tudo será organizado. <br><br>
-
-                Porém esse método de colocar estilo dentro do corpo faz com que o nosso corpo fica mais grande e longo. <br>
-
-                Para inserir qualquer estilo interno, basta criar um estilo personalizada dentro do nosso html. <br><br>
-            </dd>
+            <h2><li>Estilos CSS internal </li></h2>
+            <p>
+                Quando estuda-se estilos inline, surge a necessidade de melhorar a maneira de criar estilos, porque uma das desvantagem dos estilos inline é a poluição do código html
+            </p>
+            <p>
+                Para efectuar estilo interno, não será mais necessário colocar estilo em cada linha do nosso código html, basta configurar no corpo do nosso projeto, tudo será organizado. 
+            </p>
+                Porém esse método de colocar estilo dentro do corpo faz com que o nosso corpo fica mais grande e longo.
+            </p>
+            <p>
+                Para inserir qualquer estilo interno, basta criar um estilo personalizada dentro do nosso html.
+            </p>
         </ol>
-    </p>
-    <pre>
-        &lt;style&gt;
-                        
-            body
-            {
-                background-color: Nome da cor em ingles.
-                font-family: Tipo de letra
-                fonte-size: tamanho da letra
-            }
-            h1
-            {
-                background-color: Nome da cor em ingles.
-                font-family: Tipo de letra
-                fonte-size: tamanho da letra
-            }
-            h1
-        &lt;/style&gt;
-    </pre>
-    <p><br><br>
-        Se quiser acessar <strong><em>estilos no CSS inline, clica <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/Ex009%20-%20Estilos/index.html" target="_blank" rel="nofollow">aqui</a></em></strong> <br><br>
+        <p>
+            &lt;style&gt; <br>         
+            body { <br>
+                background-color: Nome da cor em ingles.<br>
+                font-family: Tipo de letra<br>
+                fonte-size: tamanho da letra. <br>
+            } <br>
+            h1 {<br>
+                background-color: Nome da cor em ingles.<br>
+                font-family: Tipo de letra<br>
+                fonte-size: tamanho da letra<br>
+            }<br>
+        &lt;/style&gt;<br>
+        </p>
+    </main><br>
+    <footer>
+        <nav id="a">
+            <p>
+                Visite a lista dos temas em HTML
+                <a href="#">aqui</a>✌️ <br>
+            
+                Volte no estilo inline, clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next">aqui</a></em></strong>
+            </p>
+        </nav><br>
+        <nav id="b">
+            <p>
+                Fale conosco: <br>
+                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
 
-        Se quiser acessar <strong><em>estilos no CSS external, clica <a href="file:///C:/Aplication/Visual%20code/HTML/Exercicios/M%C3%B3dulo%2001/Ex009%20-%20Estilos/estilo-external/index02.html" target="_blank" rel="nofollow">aqui</a></em></strong>
-    </p>
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+            </p>
+        </nav>
+    </footer>
 </body>
 </html>
