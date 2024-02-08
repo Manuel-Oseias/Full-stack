@@ -87,16 +87,18 @@ main{
 main h2{
     font-family: 'normal';
     font-size: 1.7em;
-    text-align: center;
+    text-align: left;
     padding: 5px;
+    width: 400px;
     background-image: linear-gradient(to right, whitesmoke, #f68f94, whitesmoke);
 }
 main h1{
     font-family: 'normal';
     font-size: 1.7em;
-    text-align: center;
+    text-align: left;
     padding: 5px;
     background-image: linear-gradient(to right, whitesmoke, #f68f94, whitesmoke);
+    width: 400px;
 }
 main h3{
     padding: 20px;
