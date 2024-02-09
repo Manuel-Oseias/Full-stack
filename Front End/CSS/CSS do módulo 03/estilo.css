@@ -11,7 +11,48 @@
     font-family: 'Estilo';
     src: url('estilo.ttf') format('opentype');
 }
-body{
-    font-family: Normal;
-    background-color: red;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: 0px 0px 150px 0px;
+    padding: 20px;
+}
+header > div#rel{
+    position: relative;
+}
+header > div#Abs{
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    left: 0px;
+    background-color: rgba(102, 51, 153, 0.441);
+    height: 110px;
+    width: 100vw;
+}
+header > div > h1{
+    position: fixed;
+    top: 50px; /*Para centralizar o texto*/
+    text-align: center;
+}
+header > div > div#link{
+    position: fixed;
+    top: 130px;
+    left: 0px;
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.416);
+}
+header > div > div > pre > a#ant{
+    position: fixed;
+    left: 40px; /*Para colocar o texto à esquerda*/
+    top: 150px; /*Para centralizar o texto*/
+    color: whitesmoke;
+}
+header > div > div > pre > a#post{
+    position: fixed;
+    right: 40px; /*Para colocar o texto à esquerda*/
+    top: 150px; /*Para centralizar o texto*/
+    color: whitesmoke;
 }
