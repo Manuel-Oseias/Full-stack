@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Variável usando LET no JavaScript</h1>
+            <p>A palavras-chave <q>let</q> foi adicionados ao <mark>JavaScript em 2015.</mark></p>
+            <p>Neste exemplo, vamos declarar let num1, let num2, let soma</p>
+            <p id="calculador"></p>
+            <p id="calculador1"></p>
+
+            <script>
+                let num1 = 12;
+                let num2 = 9;
+                let soma = num1 + num2;
+                let subt = num1 - num2;
+                let mult = num1 * num2;
+                document.getElementById("calculador").innerHTML = "Soma: " + num1 + " + " + num2 + " = " + soma;
+                document.getElementById("calculador1").innerHTML = "Subtração: " + num1 + " + " + num2 + " = " + subt;
+                //document.write("Subtração: " + num1 + " + " + num2 + " = " + subt)
+                //window.alert("Multiplicação: " + num1 + " x " + num2 + " = " + mult)
+            </script>
+        </section>
+        <section>
+            <h2>Muitas Variáveis numa linha</h2>
+            <script>
+                let nome = "Manuel", idade = 19, salario = 90000;
+                let nome1 = "Oseias", idade1 = 20, salario1 = 89000;
+                let soma1 = salario + salario1;
+                let subt1 = salario - salario1;
+                let mult1 = salario * salario1;
+                //document.getElementById("calculador1").innerHTML = "Soma: " + salario + " + " + salario1 + " = " + soma1;
+                //document.getElementById("calculador2").innerHTML = "Subtração: " + salario + " - " + salario1 + " = " + soma1;
+                document.write("Subtração: " + salario + " - " + salario1 + " = " + subt1)
+                document.write("Soma: " + salario + " + " + salario1 + " = " + soma1)
+                //window.alert("Multiplicação: " + salario + " x " + salario1 + " = " + mult)
+            </script>
+        
+
+        </section>
+    </main>
+</body>
+</html>

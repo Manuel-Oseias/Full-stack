@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            display: inline-block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Uso de innerHTML</h2>
+            <p>Adição 👉 5 + 6 = </p>
+            <p id="adicao"></p><br>
+            <p>Multiplicação 👉 5 x 6 = </p>
+            <p id="mult"></p><br>
+            <p>Subtração 👉 7 - 6 = </p>
+            <p id="subt"></p><br>
+            <p>Divisão 👉 6 / 2 = </p>
+            <p id="div"></p><br>
+            <script>
+                document.getElementById("adicao").innerHTML = 5 + 6;
+                document.getElementById("mult").innerHTML = 5 * 6;
+                document.getElementById("subt").innerHTML = 7 - 6;
+                document.getElementById("div").innerHTML = 6 / 2;
+            </script>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Os Operadores</h3>
+                <h3>Oprerador de atribuição</h3>
+                <div>
+                    <p>
+                        Em JavaScript, o sinal de igual <strong><q><mark> ( = ) </mark></q></strong> é uma <q><mark>atribuição</mark></q> do operador, e não uma <q><em><strong>igual a</strong></em></q> do operador. Isso é diferente de álgebra. <br><br>
+    
+                        Ex: nome = 'Manuel'; - <em>Aqui estamos atribuir valor <q>Manuel</q> na variável <q>nome</q></em> <br>
+                        Ex: idade = 90; - <em>Aqui estamos atribuir o valor <q>90</q> na variável <q>idade</q></em><br><br>
+    
+                        <strong><mark>Qualquer valores atribuido pode ser mútavel ou substituido</mark></strong>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Para representar sinal de igualidade usa-se <strong><q><mark> ( == ) </mark></q></strong> igual duas vezes. <br><br>
+    
+                        Ex: Manuel == 'Manuel'; - <em>Aqui estamos dizer que <q>Manuel</q> é igual <q>Manuel</q></em> <br>
+                        Ex: 90 == 90; - <em>Aqui estamos dizer que <q>90</q> é igual <q>90</q></em><br><br>
+    
+                        <strong><mark>Qualquer valores atribuido NÃO pode ser substituido e DEVE TER MESMO CERTAS CARACTERISTICAS</mark></strong>
+                    </p>
+                </div>
+                <h3>Operador de adição ou a concatenação</h3>
+                    <p>
+                        Em JavaScript, o sinal de adição <strong><q><mark> + </mark></q></strong> pode ser uma <q><mark>concatenação</mark></q> do operador, com seguintes condições <br>
+                        <ul>
+                            <li>Quando está no meio de duas variáveis do tipo string</li>
+                            <dt>
+                                Ex: <br>
+                                nome = <q>Manuel</q>
+                                nome2 = <q>Oséias</q>
+                            </dt>
+                            <li>Quando está no meio de duas variáveis armazenado involuntáriamente como string</li>
+                            <dt>
+                                <strong>É necessário de alientar que </strong><mark>QUALQUER VÁRIAVEL NO JavaScript ARMAZENADO ATRAVÉS DO COMANDO PROMPT É CONSIDERADO COMO STRING</mark> <br>
+
+                                Ex: <br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                    &lt;h1&gt;Concatenação&lt;/h1&gt;<br>
+                        
+                                    &lt;p>Neste exemplo, vamos declarar num1, num2, soma e chamar comando promp para armazena-lo.&lt;/p&gt;<br>
+                                    &lt;p id="calculador">&lt;/p &gt;<br><br>
+                        
+                                    &lt;script&gt;<br>
+                                    num1 = window.prompt("Digite o primeiro número: 5");
+                                    num2 = window.prompt("Digite o segungo número: 6");
+                                    soma = num1 + num2;
+                        
+                                    document.getElementById("calculador").innerHTML =
+                                    "Soma: " + num1 + " + " + num2 + " = " + soma;<br>
+                                    document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                                    &lt;/script &gt;<br><br>
+                        
+                                &lt;/body &gt;<br>
+                                &lt;/html &gt;<br>
+
+                                <p>
+                                    Resultado visual <br>
+                                    ------------------- <br>
+                                    Variável automaticamente no JavaScript <br>
+                                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                                    A soma 5 + 6 = 56 <em>Aqui JavaScript entende que NÃO deve fazer adição mas a concatenação, <strong>logo surge a necessidade de converter string para número.</strong></em>
+                                </p>
+                                
+                            </dt>
+                        </ul>
+                    </p>
+                    <p>
+                        Em JavaScript, o sinal de adição <strong><q><mark> + </mark></q></strong> representado com <q><mark> + </mark></q> algrebricamente, com algumas Condições <br><br>
+
+                        <ul>
+                            <li>Quando temos número à esquerda e outro número à direita</li>
+                            <dt>
+                                Ex: 
+                                num1 = 19;<br>
+                                num2 = 10;
+                                soma = num1 + num2; - <em>Aqui JavaScript entende que deve fazer adição</em>
+
+                            </dt>
+                        </ul>
+                    </p>
+        </section>
+    </main>
+</body>
+</html>

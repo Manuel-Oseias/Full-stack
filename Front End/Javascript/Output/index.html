@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Imprimir na tela</h1>
+            <p>
+                No javascript, existe 4 maneias de imprir qualquer mensagem na tela,
+            </p>
+            <ol>
+                <li>Escrevendo em  elemento um HTML, usando <mark>innerHTML.</mark></li>
+                <li>Escrevendo na saída HTML usando <mark>document.write</mark>().</li>
+                <li>Escrevendo em uma caixa de alerta, usando <mark>window.alert().</mark></li>
+                <li>Escrevendo no Console do navegador, usando <mark>console.log().</mark></li>
+            </ol>
+            <p>
+                Para acessar um elemento HTML, o JavaScript pode utilizar o <mark>document.getElementById(id)</mark> método.
+            </p>
+        </section>
+        <section>
+            <ol><h2><li>Escrevendo  um elemento em HTML, usando <mark>innerHTML.</mark></li></h2></ol>
+            <p>
+                Para acessar um elemento HTML, o JavaScript pode utilizar o <mark>document.getElementById(id)</mark> método. O <strong><amrk><q> id </q></amrk></strong> atributo define o elemento HTML. A <strong><amrk><q> innerHTML </q></amrk></strong> propriedade define o conteúdo  que quer adicionar no HTML:
+            </p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br><br>
+                <p>Uso de <strong>innerHTML</strong>&lt;/p&gt;<br>
+                    &lt;span&gt;A Adição 👉 5 + 6 =&lt;span&gt; <br>
+                    &lt;span id="demo"&gt;Tudo que será escrito aqui não pode ser visualizado &lt;/span&gt;<br><br>
+
+                    &lt;script&gt;<br>
+                    document.getElementById("demo").innerHTML = 5 + 6;<br>
+                    &lt;/script&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <p>
+                Resultado visual <br>
+                ------------------- <br>
+                Uso de <strong>innerHTML</strong> <br>
+                Adição 👉   5 + 6 = 11 <br>
+            </p>
+            <p><strong>Nota</strong> que dentro do JavaScript <strong>Sempre deve terminar com <mark>Ponto virgula <q>👉 ; 👈</q></mark></strong></p>
+        </section>
+        <section>
+            <ol><h2><li>Escrevendo na saída HTML usando <mark>document.write().</mark></li></h2></ol>
+            <p> 
+                <strong><mark>Observação: </mark></strong> Nunca chame <mark>document.write()</mark> depois que o documento terminar de carregar. Ele substituirá todo o documento.
+            </p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br><br>
+                &lt;p &gt; Uso de <strong>document.write()</strong>&lt;/p&gt;<br>
+                    Uso de document.write é feito da seguinte maneira: <br>
+
+                    &lt;script&gt;<br>
+                    <mark><strong>document.write("Escrever qualquer sms")</strong></mark>; ou <br>
+                    <mark><strong>document.write(89 * 10)</strong></mark><br>
+                    &lt;/script&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <p>
+                Resultado visual <br>
+                ------------------- <br>
+                Uso de <strong>document.write()</strong> <br>
+                Uso de document.write é feito da seguinte maneira:<br>
+                Escreve qualquer sms <br>
+                890
+            </p>
+        </section>
+        <section>
+            <ol><h2><li>Escrevendo em uma caixa de alerta, usando <mark>window.alert().</mark></li></h2></ol>
+            <p>
+                A caixa de alerta aparece em primeira instancia como uma prioridade antes que apareça o conteúdo do HTML, também pode-se usar uma caixa de alerta para apresentar dados:
+            </p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br><br>
+                &lt;p &gt; Uso de <strong>window.alert()</strong>&lt;/p&gt;<br>
+                    Uso de window.alert() é feito da seguinte maneira: <br>
+
+                    &lt;script&gt;<br>
+                    <mark><strong>window.alert("Escrever qualquer sms")</strong></mark>; ou <br>
+                    <mark><strong>window.alert(89 * 10)</strong></mark><br>
+                    &lt;/script&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <p>
+                Resultado visual <br>
+                ------------------- <br>
+                Escreve qualquer sms <br>
+                890
+            </p>
+        </section>
+        <section>
+            <ol><h2><li>Escrevendo no Console do navegador, usando <mark>console.log().</mark></li></h2></ol>
+            <p>
+                Para fins de depuração, você pode chamar o <strong><mark>console.log()</mark></strong> método no navegador para exibir os dados.
+            </p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br><br>
+                &lt;p&gt; Uso de <strong>console.log()</strong>&lt;/p&gt;<br>
+                &lt;p&gt; Pressione teclado F12 para activar a depuração&lt;/p&gt;<br>
+                &lt;p &gt;Em seguida, seleciona <q>Console no depurador de menu</q>&lt;p &gt;
+                &lt;p &gt;Seguida, clique em <q>Executar novamente.</q>
+
+                    &lt;script&gt;<br>
+                    <mark><strong>console.log( 6 + 5 )</strong></mark> <br>
+                    &lt;/script&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <p>
+                Resultado visual <br>
+                ------------------- <br>
+                Pressione teclado F12 para activar a depuraçã <br>
+                Em seguida, seleciona <q>Console no depurador de menu</q> <br>
+                Seguida, clique em <q>Executar novamente.</q> <br>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

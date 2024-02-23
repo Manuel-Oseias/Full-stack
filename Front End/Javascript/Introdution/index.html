@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens do módulo 01/logo.png" type="image/x-icon">
+    <title>Primeiro passo no Javascript</title>
+    <style>
+        .vermelho{
+            background-color: rgba(255, 0, 0, 0.489);
+            color: black;
+            font-weight: bold;
+        }
+        .verde{
+            background-color: rgba(0, 128, 0, 0.482);
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Induções do Javascript</h1><hr>
+    <p>
+        No Javascript o sinal <q><em>+</em></q> tem duas funções:
+        <ol>
+            <li>Concatenação</li>
+            <p>
+                + como <q>Concatenação</q> é juntar 2 string 👉 o comando <q><em><strong>prompt</strong></em></q> <mark>sempre recebe variável em string</mark>
+            </p>
+            <p>
+                Usa-se o sinal <q><em><strong><mark> + como Concatenação</mark></strong></em></q> da seguinte maneira:<br><br>
+                Ex: <br>
+                var numero = window.prompt("Digite o primeiro número: ") <br>
+                var numero2 = window.prompt("Digite o segundo número: ") <br>
+                var soma = numero + numero2 <br>
+                window.alert("A soma de " + numero + " + " + numero2 + " = " + soma) <br><br>
+                <pre>
+                    Resultado visual
+                    ----------------
+                    Digite o primeiro número: 9
+                    Digite o segundo número: 5
+                    <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">95</mark></strong></mark>
+
+                </pre>
+
+            </p>
+            <li>Adição</li>
+            <p>
+                + como <q>Adição</q> 👉 Quando termos 2 ou  mais números enquanto no Javascript o comando prompt armazena os dados em string, logo há necessidade de converter os valores de string em números, para faze-lo, precisa-se de 3 comando.
+            </p>
+            <ul>
+                <li>Conversão dos números inteiros</li>
+                <p>
+                    Usa-se o código <q><em><strong><mark>Number.parseInt(nome da variável)</mark></strong></em></q><br><br>
+                    Ex: <br>
+                    var numero = <mark class="vermelho">Number.parseInt</mark>(window.prompt("Digite o primeiro número: ")) <br>
+                    var numero2 = <mark class="vermelho">Number.parseInt</mark>(window.prompt("Digite o segundo número: ")) <br>
+                    var soma = numero + numero2 <br>
+                    window.alert("A soma de " + numero + " + " + numero2 + " = " + soma) <br>
+                    <pre>
+                        Resultado visual
+                        ----------------
+                        Digite o primeiro número: 9
+                        Digite o segundo número: 5
+                        <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">14</mark></strong></mark>
+    
+                    </pre>
+
+                </p>
+                <li>Conversão dos números decimais</li>
+                <p>
+                    Usa-se o código <q><em><strong><mark>Number.parseFloat(nome da variável)</mark></strong></em></q><br><br>
+                    Ex: <br>
+                    var numero = <mark class="vermelho">Number.parseFloat</mark>(window.prompt("Digite o primeiro número: ")) <br>
+                    var numero2 = <mark class="vermelho">Number.parseFloat</mark>(window.prompt("Digite o segundo número: ")) <br>
+                    var soma = numero + numero2 <br>
+                    window.alert("A soma de " + numero + " + " + numero2 + " = " + soma) <br>
+                    <pre>
+                        Resultado visual
+                        ----------------
+                        Digite o primeiro número: 9.5
+                        Digite o segundo número: 5.5
+                        <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">15.0</mark></strong></mark>
+    
+                    </pre>
+
+                </p>
+                <li>Conversão dos números tanto decimais ou inteiros</li>
+                <p>
+                    Usa-se o código <q><em><strong><mark>Number(nome da variável)</mark></strong></em></q><br><br>
+                    Ex: <br>
+                    var numero = <mark class="vermelho">Number</mark>(window.prompt("Digite o primeiro número: ")) <br>
+                    var numero2 = <mark class="vermelho">Number</mark>(window.prompt("Digite o segundo número: ")) <br>
+                    var soma = numero + numero2 <br>
+                    window.alert("A soma de " + numero + " + " + numero2 + " = " + soma) <br>
+                    <pre>
+                        Resultado visual
+                        ----------------
+                        Digite o primeiro número: 9
+                        Digite o segundo número: 5
+                        <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">14</mark></strong></mark>
+
+                        Digite o primeiro número: 2.5
+                        Digite o segundo número: 1.6
+                        <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">4.1</mark></strong></mark>
+                    </pre>
+                </p>
+
+            </ul>
+        </ol>
+    </p>
+    <p>
+        Existe uma maneira facil de imprimir a variável sem usar a Concatenação, usando <mark class="verde">template string <q><em>👉 $ com aspas `Aqui fica as frases para serem imprimidas` </em></q></mark> 
+        <p>
+            Usa-se o código <q><em><strong><mark>Number(nome da variável)</mark></strong></em></q><br><br>
+            Ex: <br>
+            var numero = <mark class="vermelho">Number</mark>(window.prompt("Digite o primeiro número: ")) <br>
+            var numero2 = <mark class="vermelho">Number</mark>(window.prompt("Digite o segundo número: ")) <br>
+            var soma = numero + numero2 <br>
+            window.alert(`A soma de ${numero} + ${numero2} = ${soma}`) <br>
+            <pre>
+                Resultado visual
+                ----------------
+                Digite o primeiro número: 2.5
+                Digite o segundo número: 1.6
+                <mark class="verde">👉 A soma de 9 + 5 = <strong><mark class="vermelho">4.1</mark></strong></mark>
+            </pre>
+        </p>
+
+    </p>
+    <script>
+        var n1 = window.prompt("Numero: ")
+        var n2 = window.prompt("Numero: ")
+        var num = Number.parseInt(n1)
+        var num2 = Number.parseFloat(n2)
+        var soma = num + num2
+        window.alert(`A soma entre ${num} + ${num2} = ${soma}`)
+    </script>
+</body>
+</html>

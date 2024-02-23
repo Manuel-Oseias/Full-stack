@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Variáveis e Tipos Primitivos</h1>
+            <p>
+                As variáveis são Recipientes para Armazenamento de Dados, 
+                
+                Em JavaScript existe 7 tipo de variáveis:
+            </p>
+            <ul>
+                <li>number</li>
+                <li>string</li>
+                <li>boolean</li>
+                <li>undefined</li>
+                <li>object</li>
+                <li>function</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Condições para declarar variáveisl</h2>
+            <p><strong>As regras gerais para a construção de nomes para as variáveis (identificadores únicos) são</strong></p>
+            <ol>
+                <li>Começar com <q><strong><mark> Letras </mark></strong></q> ou <q><strong><mark> Digitos </mark></strong></q> ou <q><strong><mark> dólar $ </mark></strong></q> ou <q><strong><mark> Sublinhado _ </mark></strong></q> </li>
+                <p>
+                    É sempre aconselhável de colocar o nome coerente para identificar obejeto que precisa armazenar.
+                </p>
+                <ul>
+                    <li>Nome deve ser coerente para as variáveis</li>
+                    <dt>
+                        Ex1: var nome - para armazenar os dados de <q>nome</q> <br>
+                        Ex2: var idade -  para armazenar os dados <q>idades</q>
+                    </dt><br>
+                    <li>Nome em maiúscula é diferente do nome em minúscula</li>
+                    <dt>
+                        Ex1: var nome &ne; var Nome <br>
+                        Ex2: var Idade &ne; var idade
+                    </dt><br>
+                    <li>Acentos é permetido <strong><mark>embora não é aconselhável</mark></strong></li>
+                    <dt>
+                        Ex1: var número - para armazenar números <br>
+                        Ex2: var conteúdo - para armazenar conteúdo
+                    </dt><br>
+                </ul>
+                <li>Não pode começar com <q><strong><mark> Números </mark></strong></q></li>
+                <p>
+                    O JavaScript não consegue identificar uma variável caso ela começa com número, ele se questiona <q>será que é atributo 🤔? </q> ou <q>variável 🤔?</q>, razáo pela qual é sempre aconselhável de Não é possivél atribuir uma variável que começa com digito <strong><mark>entretanto pode ter número no meio ou no fim. </mark></strong>  <br><br>
+
+                    Ex: nome1, nome2, nome3, etc...
+                </p>
+                <li>Não pode ser palavras<q><strong><mark> reservadas </mark></strong></q></li>
+                <p>
+                    Existe várias palavras reservadas no JavaScript, todas estão em inglês, citaremos algumas dessas palavras: <br><br>
+
+                    Palavras reservadas: <strong><maark>var, function, if, else, return, true, false, null, this, typrof </maark></strong>
+                </p>
+            </ol>
+        </section>
+        <section>
+            <ol><h2>Como usar <q><mark>variáveis</mark></q> no JavaScript</h2></ol>
+            <p> Em JavaScript as Variáveis podem ser declaradas em 4 formas: </p>
+            <ul>
+                <li><strong><mark>Automaticamente</mark></strong></li>
+                <li><strong><mark>Usando var</mark></strong></li>
+                <li><strong><mark>Usando let</mark></strong></li>
+                <li><strong><mark>Usando const</mark></strong></li>
+            </ul>
+            <p>
+                Após a declaração, a variável não tem valor (tecnicamente é undefined). Para atribuir um valor à variável, use o sinal de igual:
+            </p>
+            <div>
+                <ol><h3><li><strong><mark>Automaticamente</mark></strong></li></h3></ol>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Variável automaticamente no JavaScript&lt;/h1&gt;<br>
+            
+                        &lt;p>Neste exemplo, vamos declarar num1, num2, soma.&lt;/p&gt;<br>
+                        &lt;p id="calculador">&lt;/p &gt;<br><br>
+            
+                        &lt;script&gt;<br>
+                        num1 = 5;<br>
+                        num2 = 6;<br>
+                        soma = num1 + num2;<br><br>
+            
+                        document.getElementById("calculador").innerHTML =
+                        "Soma: " + num1 + " + " + num2 + " = " + soma;<br>
+                        document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                        &lt;/script &gt;<br><br>
+            
+                    &lt;/body &gt;<br>
+                    &lt;/html &gt;<br>
+                </p>
+                <p>
+                    Resultado visual <br>
+                    ------------------- <br>
+                    Variável automaticamente no JavaScript <br>
+                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                    A soma 5 + 6 = 11
+                </p>
+            </div>
+            <div>
+                <ol><h3><li><strong><mark>Usando VAR</mark></strong></li></h3></ol>
+                <p>
+                    A palavra-chave <q>var</q> foi usada no JavaScript a partir de <mark>1995 a 2015.</mark>
+                </p>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1>Variável usando VAR no JavaScript&lt;/h1&gt;<br>
+            
+                        &lt;p>Neste exemplo, vamos declarar var num1, var num2, var soma.&lt;/p&gt;<br>
+                        &lt;p id="calculador">&lt;/p &gt;<br><br>
+            
+                        &lt;script&gt;<br>
+                        var num1 = 5;<br>
+                        var num2 = 6;<br>
+                        var soma = num1 + num2;<br><br>
+            
+                        document.getElementById("calculador").innerHTML =
+                        "Soma: " + num1 + " + " + num2 + " = " + soma<br>
+                        document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                        &lt;/script &gt;<br><br>
+            
+                    &lt;/body &gt;<br>
+                    &lt;/html &gt;<br>
+                </p>
+                <p>
+                    Resultado visual <br>
+                    ------------------- <br>
+                    Variável automaticamente no JavaScript <br>
+                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                    A soma 5 + 6 = 11
+                </p>
+            </div>
+            <div>
+                <ol><h3><li><strong><mark>Usando LET</mark></strong></li></h3></ol>
+                <p>
+                    A let e const palavras-chave foram adicionados ao <mark>JavaScript em 2015.</mark>
+                </p>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Variável usando LET no JavaScript&lt;/h1&gt;<br>
+            
+                        &lt;p>Neste exemplo, vamos declarar let num1, let num2, let soma.&lt;/p&gt;<br>
+                        &lt;p id="calculador">&lt;/p &gt;<br><br>
+            
+                        &lt;script&gt;<br>
+                        let num1 = 5;<br>
+                        let num2 = 6;<br>
+                        let soma = num1 + num2;<br><br>
+            
+                        document.getElementById("calculador").innerHTML =
+                        "Soma: " + num1 + " + " + num2 + " = " + soma<br>
+                        document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                        &lt;/script &gt;<br><br>
+            
+                    &lt;/body &gt;<br>
+                    &lt;/html &gt;<br>
+                </p>
+                <p>
+                    Resultado visual <br>
+                    ------------------- <br>
+                    Variável automaticamente no JavaScript <br>
+                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                    A soma 5 + 6 = 11
+                </p>
+            </div>
+            <div>
+                <ol><h3><li><strong><mark>Usando CONST</mark></strong></li></h3></ol>
+                <p>
+                    A palavras-chave <q>const</q> foi adicionado ao <mark>JavaScript em 2015.</mark>
+                </p>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Variável usando CONST no JavaScript&lt;/h1&gt;<br>
+            
+                        &lt;p>Neste exemplo, vamos declarar constnum1, const num2, const soma.&lt;/p&gt;<br>
+                        &lt;p id="calculador">&lt;/p &gt;<br><br>
+            
+                        &lt;script&gt;<br>
+                        const num1 = 5;<br>
+                        const num2 = 6;<br>
+                        const soma = num1 + num2;<br><br>
+            
+                        document.getElementById("calculador").innerHTML =
+                        "Soma: " + num1 + " + " + num2 + " = " + soma<br>
+                        document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                        &lt;/script &gt;<br><br>
+            
+                    &lt;/body &gt;<br>
+                    &lt;/html &gt;<br>
+                </p>
+                <p>
+                    Resultado visual <br>
+                    ------------------- <br>
+                    Variável automaticamente no JavaScript <br>
+                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                    A soma 5 + 6 = 11
+                </p>
+            </div>
+            <div>
+                <ol><h3><li><strong><mark>Usando MISTURA DE CONST E LET</mark></strong></li></h3></ol>
+                <p>
+                    A let e const palavras-chave foram adicionados ao <mark>JavaScript em 2015.</mark>
+                </p>
+                <p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1>Variável usando MISTURA DE CONST E LET no JavaScript&lt;/h1&gt;<br>
+            
+                        &lt;p>Neste exemplo, vamos declarar let num1, const num2, let soma.&lt;/p&gt;<br>
+                        &lt;p id="calculador">&lt;/p &gt;<br><br>
+            
+                        &lt;script&gt;<br>
+                        let num1 = 5;<br>
+                        const num2 = 6;<br>
+                        let soma = num1 + num2;<br><br>
+            
+                        document.getElementById("calculador").innerHTML =
+                        "Soma: " + num1 + " + " + num2 + " = " + soma<br>
+                        document.write("Soma: " + num1 + " + " + num2 + " = " + soma) <br>
+                        &lt;/script &gt;<br><br>
+            
+                    &lt;/body &gt;<br>
+                    &lt;/html &gt;<br>
+                </p>
+                <p>
+                    Resultado visual <br>
+                    ------------------- <br>
+                    Variável automaticamente no JavaScript <br>
+                    Neste exemplo, vamos declarar num1, num2, soma. <br>
+                    A soma 5 + 6 = 11
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Quando usar var, let, ou constante?</h2>
+            <p>Sempre declare as variáveis</p>
+            <ul>
+                <li>Use sempre <strong><mark>const</mark></strong> se o valor <strong><mark>não deve ser alterado</mark></strong></li>
+                <li>Use sempre <mark><strong>const</strong></mark> se o tipo não deve ser alterado <mark><strong>(para Arrays e Objetos)</strong></mark></li>
+                <li>Só use <mark><strong>let</strong></mark> se você não pode usar <mark><strong>const</strong></mark></li>
+                <li>Só use <mark><strong>var</strong></mark>se você TEM suporte a navegadores antigos.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
