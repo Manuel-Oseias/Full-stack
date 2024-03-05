@@ -86,13 +86,13 @@
                 Há duas maneiras para começar a utilizar o Bootstrap 5 em seu próprio web site. Você pode:
             </p>
             <ol>
-                <li>Incluem Bootstrap 5 a partir de uma CDN</li>
-                <li>Download do Bootstrap a partir de 5 getbootstrap.com</li>
+                <li>Bootstrap external</li>
+                <li>Bootstrap internal</li>
             </ol>
         </div>
         <section>
-            <ol type="I"><h2><li>Incluem Bootstrap 5 a partir de uma CDN</li></h2></ol>
-            <p>
+            <ol type="I"><h2><li>Bootstrap external</li></h2></ol>
+            <p> O Bootstrap external é incluido a partir de uma CDN
                 <abbr title="Content Delivrary Network">CDN</abbr> 👉 é um local apropriado para armazenamento das distribuiçõa rápida dos conteúdos státicos tais como imagens, CSS, Javascript etc...
             </p>
             <p>
@@ -110,9 +110,9 @@
             </p>
         </section>
         <section>
-            <ol type="I"><h2><li>Download do Bootstrap a partir de 5 getbootstrap.com</li></h2></ol>
+            <ol type="I"><h2><li>Bootstrap internal</li></h2></ol>
             <p>
-                Pode inserir o Bootstrap <em><strong>Bootstrap</strong></em> da seguinte maneira:
+                Bootstrap internal ou baixado a partir de 5 getbootstrap. Esse Bootstrap pode inserir o Bootstrap <em><strong>Bootstrap</strong></em> da seguinte maneira:
             </p>
             <ul>
                 <li>Acessa o site oficial de Bootstrap clicando <a href="https://getbootstrap.com/" target="_blank"><strong>aqui</strong></a></li>
@@ -121,8 +121,24 @@
 
                 <li>Baixanod o pacote, pode usa-lo como bem entender 🤡</li>
 
-                <li>Pode acessar o seu console (Para VS-code 👉 Ctrl + shift + ` (fica antes do numero 1))</li>
+                <li>Pode acessar o seu console (Para VS-code 👉 Ctrl + shift + ` (fica antes do numero 1)) - usar esse comando <strong><q><mark>npm install bootstrap@5 </mark></q></strong> ou  <strong><q><mark>gem install bootstrap -v 5 </mark></q></strong> </li>
+                <li>
+                    Após de baixar arquivo, podemos usa-lo como bem entendemos, <br><br>
+                    <ul type="circle">
+                        <li>
+                            Para <q><strong>CSS interno </strong>- basta colocar &lt; link rel="stylesheet" href="endeço onde está lojado o nosso arquivo" &gt;</q>
+                        </li> <br>
+                        <li>
+                            Para <strong>Javascript internal </strong> - basta colocar &lt; scripts  src="endeço onde está lojado o nosso arquivo" &gt;</q>
+                        </li>
+                    </ul>
+                </li>
             </ul>
+            <aside>
+                <p>
+                    Ao desenvolver o seu site, usa-se Bootstraps interno e quando for para publicar usa-se Bootstrap externo
+                </p>
+            </aside>
         </section>
     </main>
 </body>

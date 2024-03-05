@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Doc-Bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Exemplo de breakpoint</title>
+    <style>
+        main > div > h1{
+            background-color: rgba(255, 0, 0, 0.422);
+            color: rgb(4, 8, 123);
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de breakpoint</h1>
+        <p>
+            Nesse exemplo usaremos a a classe da seguinte maneira: <br>
+
+            <mark>
+                class="text-sm-start text-md-end text-lg-center text-xl-end text-xxl-start"
+            </mark> <br>
+        </p>
+            
+        <ul>
+            <h6>isso significa:</h6>
+            <li>Quando o tamanho da tela for de <strong>0px até 576px</strong><em><strong> - o texto será alinhado a esquerda  para direita</strong></em></li>
+            
+            <li>Quando o tamanho da tela for de <strong>576px até 768px</strong><em><strong> - o texto será alinhado a direita para esquerda </strong></em></li>
+
+            <li>Quando o tamanho da tela for de <strong>768px até 992px</strong><em><strong> - o texto será alinhado no centro</strong></em></li>
+
+            <li>Quando o tamanho da tela for de <strong>992px até 1200px</strong><em><strong> - o texto será alinhado a direita para esquerda</strong></em></li>
+
+            <li>Quando o tamanho da tela for de <strong>1200px até 1400px</strong><em><strong> - o texto será alinhado a esquerda  para direita</strong></em></li>
+
+        </ul>
+        <div>
+            <h1 class="text-sm-start text-md-end text-lg-center text-xl-end text-xxl-start" >Veja o texto aqui</h1>
+        </div>
+            
+    </main>
+    
+</body>
+</html>
