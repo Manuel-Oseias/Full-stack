@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS-docs/ex02.css">
+    <title>Segundo exercicio</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <label for="idade">Ano de nascimento: </label>
+            <input type="number" id="idade" placeholder="Digite a sua idade" min="0">
+            
+        </div><br>
+        <div>
+            <span>Sexo:</span>
+            <input type="radio" name="sexo" id="sexo">
+            <label for="sexo">Masculino</label>
+            <input type="radio" name="sexo1" id="isexo">
+            <label for="isexo">Femino</label>
+        </div><br>
+        <p onclick="verificar()">
+            <input type="button" value="verificar">
+        </p>
+        <p id="res">Prencha os dados acima para ver o resultado!</p>
+        <div id="resultado"></div>
+        <script src="../Javascript-docs/segundo.js"></script>
+    </section> <br><br><hr><hr>
+    <footer>
+        <p>&copy;manuel.oseias</p>
+    </footer>
+</body>
+</html>

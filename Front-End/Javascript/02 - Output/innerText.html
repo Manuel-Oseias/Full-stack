@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p, article{
+            display: inline-block;
+        }
+        span{
+            background-color: red;
+        }
+    </style>
+    <title>InnerText</title>
+</head>
+<body>
+    <header>
+        <h1>Uso de innerText</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Exemplo 01</h2>
+            <p>Adição 👉 5 + 6 = </p>
+            <p id="adicao"></p><br>
+            <p>Multiplicação 👉 5 x 6 = </p>
+            <p id="mult"></p><br>
+            <p>Subtração 👉 7 - 6 = </p>
+            <p id="subt"></p><br>
+            <p>Divisão 👉 6 / 2 = </p>
+            <p id="div"></p><br>
+            <script>
+                document.getElementById("adicao").innerText = 5 + 6;
+                document.getElementById("mult").innerText = 5 * 6;
+                document.getElementById("subt").innerText = 7 - 6;
+                document.getElementById("div").innerText = 6 / 2;
+            </script>
+            <h2>Exemplo 02</h2>
+            <p>Quando usamos <strong>innerText <mark>NÃO podemos adicionar tag do HTML</mark></strong>  porque o JavaScript NÃO conseguem reconhecer as tags caso usarmos innerText, vejamos exemplo seguinte.</p>
+            <div>
+                Vou adicionar uma tag div aqui 👉 <span id="aqui"></span>
+            </div>
+            <script>
+                document.getElementById("aqui").innerText = "<div> Aqui esta o meu paragrafo </div>"
+            </script>
+            <p>
+                <strong><em>Note que JavaScript não reconhecer a tag adicionada, simplesmente imprimiu o texto normal.</em></strong>
+            </p>
+        </section>
+    </main> <hr><hr>
+    <footer>
+        <p>
+            Volte na página inicial clicando <a href="index.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a>
+        </p>
+    </footer>
+    
+</body>
+</html>

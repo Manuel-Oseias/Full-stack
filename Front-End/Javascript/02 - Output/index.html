@@ -14,6 +14,7 @@
             </p>
             <ol>
                 <li>Escrevendo em  elemento um HTML, usando <mark>innerHTML.</mark></li>
+                <li>Escrevendo em  elemento um HTML, usando <mark>innerText.</mark></li>
                 <li>Escrevendo na saída HTML usando <mark>document.write</mark>().</li>
                 <li>Escrevendo em uma caixa de alerta, usando <mark>window.alert().</mark></li>
                 <li>Escrevendo no Console do navegador, usando <mark>console.log().</mark></li>
@@ -25,7 +26,10 @@
         <section>
             <ol><h2><li>Escrevendo  um elemento em HTML, usando <mark>innerHTML.</mark></li></h2></ol>
             <p>
-                Para acessar um elemento HTML, o JavaScript pode utilizar o <mark>document.getElementById(id)</mark> método. O <strong><amrk><q> id </q></amrk></strong> atributo define o elemento HTML. A <strong><amrk><q> innerHTML </q></amrk></strong> propriedade define o conteúdo  que quer adicionar no HTML:
+                Quando usamos <strong>innerHTML <mark>podemos adicionar tag do HTML</mark></strong>  porque o JavaScript conseguem reconhecer as tags caso usarmos o innerHTML. clica <a href="innerHTML.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a> para ver exemplo
+            </p>
+            <p>
+                Para acessar um elemento HTML, o JavaScript pode utilizar o <mark>document.getElementById(id)</mark> método. O <strong><mark><q> id </q></mark></strong> atributo define o elemento HTML. A <strong><mark><q> innerHTML </q></mark></strong> propriedade define o conteúdo  que quer adicionar no HTML:
             </p>
             <p>
                 &lt;!DOCTYPE html&gt;<br>
@@ -48,7 +52,40 @@
                 Uso de <strong>innerHTML</strong> <br>
                 Adição 👉   5 + 6 = 11 <br>
             </p>
-            <p><strong>Nota</strong> que dentro do JavaScript <strong>Sempre deve terminar com <mark>Ponto virgula <q>👉 ; 👈</q></mark></strong></p>
+            <p><strong>Nota</strong> que dentro do JavaScript <strong>Sempre deve terminar com <mark>Ponto virgula <q>👉 ; 👈</q></mark></strong> vejamos exemplo, clicando <a href="innerHTML.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a></p>
+        </section><br>
+        <section>
+            <ol><h2><li>Escrevendo  um texto em HTML, usando <mark>innerText.</mark></li></h2></ol>
+            <p>
+                Quando usamos <strong>innerText <mark>NÃO podemos adicionar tag do HTML</mark></strong>  porque o JavaScript NÃO conseguem reconhecer as tags caso usarmos o innerText. clica <a href="innerText.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a> para ver exemplo
+            </p>
+            <p>
+                Para acessar um elemento HTML, o JavaScript pode utilizar o <mark>document.getElementByClass(class)</mark> método ou outros métodos. O <strong><mark><q> id </q></mark></strong> atributo define o elemento HTML. A <strong><mark><q> innerText </q></mark></strong> propriedade define o conteúdo  que quer adicionar no HTML:
+            </p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br><br>
+                <p>Uso de <strong>innerText</strong>&lt;/p&gt;<br>
+                    &lt;span&gt;A Adição 👉 5 + 6 =&lt;span&gt; <br>
+                    &lt;span id="demo"&gt;Tudo que será escrito aqui não pode ser visualizado &lt;/span&gt;<br><br>
+
+                    &lt;script&gt;<br>
+                    document.getElementById("demo").innerText = 5 + 6;<br>
+                    &lt;/script&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <p>
+                Resultado visual <br>
+                ------------------- <br>
+                Uso de <strong>innerText</strong> <br>
+                Adição 👉   5 + 6 = 11 <br>
+            </p>
+            <p>
+                <strong>Nota</strong> que dentro do JavaScript <strong>Sempre deve terminar com <mark>Ponto virgula <q>👉 ; 👈</q></mark></strong> vejamos exemplo, clicando <a href="innerText.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a>
+            </p>
         </section>
         <section>
             <ol><h2><li>Escrevendo na saída HTML usando <mark>document.write().</mark></li></h2></ol>
@@ -78,6 +115,9 @@
                 Escreve qualquer sms <br>
                 890
             </p>
+            <p>
+                Vejamos exemplo clicando <a href="documentwrite.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a>
+            </p>
         </section>
         <section>
             <ol><h2><li>Escrevendo em uma caixa de alerta, usando <mark>window.alert().</mark></li></h2></ol>
@@ -104,6 +144,9 @@
                 ------------------- <br>
                 Escreve qualquer sms <br>
                 890
+            </p>
+            <p>
+                Vejamos exemplo clicando <a href="alert.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a>
             </p>
         </section>
         <section>

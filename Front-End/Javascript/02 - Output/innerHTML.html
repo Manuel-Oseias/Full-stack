@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        p{
+        p, article{
             display: inline-block;
+        }
+        article{
+            background-color: red;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Uso de innerHTML</h1>
+    </header>
     <main>
         <section>
-            <h2>Uso de innerHTML</h2>
+            <h2>Exemplo 01</h2>
             <p>Adição 👉 5 + 6 = </p>
             <p id="adicao"></p><br>
             <p>Multiplicação 👉 5 x 6 = </p>
@@ -28,8 +34,21 @@
                 document.getElementById("subt").innerHTML = 7 - 6;
                 document.getElementById("div").innerHTML = 6 / 2;
             </script>
+            <h2>Exemplo 01</h2>
+            <p>Quando usamos <strong>innerHTML <mark>podemos adicionar tag do HTML</mark></strong> porque o JavaScript NÃO conseguem reconhecer as tags caso usarmos o innerHTML, vejamos exemplo seguinte.</p>
+            <div>
+                Vou adicionar uma tag article aqui 👉 <span id="aqui"></span>
+            </div>
+            <script>
+                document.getElementById("aqui").innerHTML = "<article> Aqui esta o meu paragrafo </article>"
+            </script>
         </section>
-    </main>
+    </main> <hr><hr>
+    <footer>
+        <p>
+            Volte na página inicial clicando <a href="index.html" target="_parent" rel="next"><mark><strong>aqui</strong></mark></a>
+        </p>
+    </footer>
     
 </body>
 </html>
