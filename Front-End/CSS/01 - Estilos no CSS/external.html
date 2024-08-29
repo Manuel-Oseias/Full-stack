@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos CSS externos</title>
+    <link rel="stylesheet" href="../CSS do módulo 03/estilo.css">
 </head>
 <body>
     <header>
-        <div id="rel"></div>
-        <div id="Abs">
-            <h1>INSERIR OS SÍMBOLOS</h1>
-            <div id="link">
-                <pre>
-                    <a href="#" id="ant">Anterior</a>
-                </pre>
-            </div>
-        </div>
+        <h1>Estilos CSS External</h1>
+        <p class="post">
+            <a href="Inline.html">Principal</a>
+        </p>
     </header>
     <main>
-        <p>
-            A linguagem CSS3 é a linguagem mais especializado no estilo do site, fonte, imagem, etc.. enquanto html está intricicamente ligado com a semântica(texto). Para colocar estilo dentro do CSS3, usa-se 3 maneira básica que são:
-        </p>
-        <ol>
-            <strong>
-                <li>Estilos CSS <a href="#" rel="next" title="estilo entre as linhas">inline</a></li>
-    
-                <li>Estilos CSS <a href="#" target="_blank" rel="next" title="estilo interno">internal</a></li>
+        <section>
+            <p>
 
-                <li>Estilos CSS <abbr title="estilo externo">external</abbr></li>
-            </strong>
-        </ol>
-        <ol start="3"><h2 style="text-align: left;"><li>Estilos CSS external </h2></li></ol>
-        <p>
-            Apesar que os estilos CSS internos ajuda bastante o desenvolvidor e poupa o tempo dele para não repetir os mesmos códigos em linhas diferentes, este estilo possui uma ligeira desvantagem.
-        </p>
-        <p>
-            A sua desvantagem consiste em ter um cabeçário muito grande e o seu conteúdo em poucas linha e muito longe de acessar
-        </p>
-        <p>
-            Além disso, suponhamos que o dono do site possui varios site e precisa de modifica-lo num certo periodo, será necessário que o desenvolvidor alterar em cada site o stilo preferido do seu cliente.
-        </p>
-        <p>
-            Por isso existe um método simples e mais dinâmico para colocar estilo em varios site sem mexer nos codigos orginais.
-        </p>
-            
-        </p>
-        <p>
-            <strong><mark>DICA:</mark> para criar uma página nova sem ter a necessidade de abrir a pasta basta clicar <mark>ctrl + clique esquerda uma vez.</mark> vai abrir uma janela pedindo para criar novo arquivo <em>Nota que o doc em href deve ser em formato html do tipo 👉 nome.html</em></strong>
-        </p>
+                O <strong>CSS externo (Cascading Style Sheets)</strong>  é uma das abordagens mais eficazes e amplamente adotadas na estilização de páginas web. Ao permitir que os estilos sejam definidos em um arquivo separado, o CSS externo proporciona uma série de vantagens significativas para desenvolvedores e designers. Esta metodologia promove uma separação clara entre a estrutura do conteúdo HTML e a apresentação visual, facilitando a manutenção e a atualização do design sem a necessidade de alterar o código HTML em cada página. <br><br>
+                
+                
+                Além disso, o uso de arquivos CSS externos contribui para a redução do tamanho do código, aumentando a eficiência no carregamento da página e melhorando a experiência do usuário. Com a capacidade de reutilizar o mesmo arquivo CSS em múltiplas páginas, os desenvolvedores podem garantir consistência visual em todo o site, otimizar seu fluxo de trabalho e economizar tempo na implementação de alterações de estilo. Em suma, o CSS externo é uma ferramenta fundamental para a criação de sites modernos e responsivos, oferecendo flexibilidade e organização na gestão de estilos.
+            </p>
+        </section>
+        <section>
+            <h3>Como Colocar Estilo CSS Externo?</h3>
+            <p>
+                Para aplicar estilos CSS externos em um documento HTML, siga os passos abaixo:
+            </p>
+            <ul>
+                <li> Criação do Arquivo CSS:</li> 
+                <dd>
+                    Primeiramente, crie um arquivo de estilo com a extensão.css, pode se nomear o arquivo como: <mark><strong>nome do arquivo.css</strong></mark>
+                </dd>
+                <li>Salvamento do Arquivo</li>
+                <dd>
+                    Salve o arquivo CSS em um local acessível, preferencialmente na mesma pasta que o seu arquivo HTML ou em uma subpasta específica para estilos
+                </dd>
+                <li>Linkagem do Arquivo CSS no HTML</li>
+                <dd>
+                    Para vincular o arquivo CSS ao seu documento HTML, utilize a tag &lt; link &gt; dentro da seção &lt; head &gt; do seu arquivo HTML. O código deve ser semelhante ao seguinte:
+                </dd>
+                <pre> 
+                    <mark>&lt; head &gt;</mark>
+                        <mark>&lt;link rel="stylesheet" type="text/css" href="estilo.css" &gt;</mark>
+                    <mark>&lt;/head &gt;</mark>
+                </pre>
+            </ul>
+            <p>
+                <mark>Aqui, o atributo href deve conter o caminho para o seu arquivo CSS. Se o arquivo estiver em uma subpasta chamada "css", por exemplo, o caminho seria css/estilo.css.</mark>
+            </p>
+        </section>
+
     </main>
     <footer>
-        <nav id="a">
-            <p>
-                Visite a lista dos temas em HTML
-                <a href="#">aqui</a>✌️ <br>
+        <nav>
+            <p id="link">
+                Visite Estilo CSS Inline, 👉 
+                <a href="Inline.html">Clique aqui</a>✌️ <br>
+
+                Visite Estilo CSS Internal,👉
+                <a href="Internal.html">Clique aqui</a>✌️ <br>
             
-                Quer saber sobre aa cores em CSS <a href="#top" target="_blank">aqui</a>✌️
+                Quer saber sobre as cores em CSS, 👉 <a href="#top" target="_blank">Clique aqui</a>✌️
             </p>
-        </nav><br>
-        <nav id="b">
-            <p>
+        
+            <p id="rede">
                 Fale conosco: <br>
-                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
+                <a href="https://github.com/" target="_blank" id="direta"><img src="../Imagens/github.jpg" alt="Foto de github" class="redes" ></a>
 
-                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+                <a href="http://www.facebook.com.vn/" target="_blank" id="esquerda"><img src="../Imagens/facebook.jpg" alt="Foto de facebook" class="redes" ></a>
 
-                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens/youtube.jpg" alt="Foto de youtube" class="redes"></a>
             </p>
         </nav>
     </footer>

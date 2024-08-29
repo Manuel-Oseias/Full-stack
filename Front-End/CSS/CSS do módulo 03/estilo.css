@@ -1,58 +1,103 @@
-@charset "UFT-8";
-@font-face {
-    font-family: 'Normal';
-    src: url('normal.ttf') format('opentype');
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #F8E5BB;
 }
-@font-face {
-    font-family: 'Titulo';
-    src: url('titulo.ttf') format('opentype');
-}
-@font-face {
-    font-family: 'Estilo';
-    src: url('estilo.ttf') format('opentype');
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 header{
-    margin: 0px 0px 150px 0px;
-    padding: 20px;
-}
-header > div#rel{
+    margin-bottom:170px;
     position: relative;
+    background-color:#212121;
 }
-header > div#Abs{
+header > h1 {
     position: fixed;
     top: 0px;
-    padding: 10px;
-    left: 0px;
-    background-color: rgba(102, 51, 153, 0.441);
-    height: 110px;
-    width: 100vw;
-}
-header > div > h1{
-    position: fixed;
-    top: 50px; /*Para centralizar o texto*/
     text-align: center;
-}
-header > div > div#link{
-    position: fixed;
-    top: 130px;
-    left: 0px;
+    text-decoration: wavy;
+    height: 25%;
     width: 100vw;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.416);
+    margin:-4px -20px ;
+    padding: 40px;
+    color: white;
+    background-color:#212121;
 }
-header > div > div > pre > a#ant{
+
+header > p{
     position: fixed;
-    left: 40px; /*Para colocar o texto à esquerda*/
-    top: 150px; /*Para centralizar o texto*/
-    color: whitesmoke;
+    top: 85px;
+    left: 50px;
+    width: 200px;
 }
-header > div > div > pre > a#post{
-    position: fixed;
-    right: 40px; /*Para colocar o texto à esquerda*/
-    top: 150px; /*Para centralizar o texto*/
-    color: whitesmoke;
+
+header > p > a{
+    background-color: white;
+    color:#e04949;
+    padding: 9px;
+    border-radius: 5px;
 }
+header > p > a:hover{
+    background-color: #F8E5BB;
+    color: red;
+    font-weight: bold;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+main > section > h3 {
+    text-align: center;
+    text-shadow: 1px 1px red;
+    text-transform: uppercase;
+}
+footer > nav >  p#link{
+    margin: -10px;
+    padding: 10px;
+    width: 350px;
+    height: 80px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    text-align: justify;
+}
+footer > nav > p#link:hover{
+    text-align: center;
+    background-color: white;
+    width: 100vw;
+}
+footer > nav > p > a > img.redes{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    box-shadow: 50%;
+}
+
+footer > nav > p#redes {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  footer > nav > p > a#direita {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  footer > nav > p > a#esquerda {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    a#direita, a#esquerda {
+      flex: 100%;
+    }
+  }

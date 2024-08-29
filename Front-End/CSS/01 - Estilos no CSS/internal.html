@@ -3,88 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imagens do módulo 01/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS do módulo 01/modulo1.css">
+    <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
     <style>
-        main h2{
-            text-align: left;
+        body{
+            background-color: #F8E5BB;
+        }
+        header{
+            position: relative;
+            margin: 0px 0px 190px 0px;
+        }
+        header > h1{
+            position: fixed;
+            top: -1px;
+            background-color: #212121;
+            color: white;
+            text-align: center;
+            height: 15%;
+            width: 100vw;
+            margin: -10px;
+            padding: 40px 0px;
+        }
+        header > p#last{
+            position: fixed;
+            top: 90px;
+            left: 30px;
+        }
+        header > p#next{
+            position: fixed;
+            top: 90px;
+            right: 70px;
+        }
+        header > p > a{
+            background-color:white;
+            color:#212121;
+            padding: 9px;
+            border-radius: 5px;
         }
     </style>
-    <title>Estilos CSS internos</title>
+    <title>Estilos internos</title>
 </head>
 <body>
     <header>
-        <div id="rel"></div>
-        <div id="Abs">
-            <h1>Estilos CSS internal</h1>
-            <div id="link">
-                <pre>
-                    <a href="#" id="ant">Anterior</a><a href="#" id="post" rel="next">Seguintes</a>
-                </pre>
-            </div>
-        </div>
+        <h1>Estilos CSS Internal</h1>
+        <p id="last">
+            <a href="Inline.html">Principal</a>
+        </p>
+        <p id="next">
+            <a href="External.html"  rel="next">Seguintes</a>
+        </p>
     </header>
     <main>
-        <p>
-            A linguagem CSS3 é a linguagem mais especializado no estilo do site, fonte, imagem, etc.. enquanto html está intricicamente ligado com a semântica(texto). Para colocar estilo dentro do CSS3, usa-se 3 maneira básica que são:
-        </p>
-        <ol>
-            <strong>
-                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/index.html" target="_blank" rel="next" title="estilo entre as linhas">inline</a></li>
-
-                <li>Estilos CSS <abbr title="estilo interno">internal</abbr></li>
-    
-                <li>Estilos CSS <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next" title="estilo externo">external</a></li>
-            </strong>
-        </ol>
-        <ol start="2">
-            <h2 style="text-align: left;"><li>Estilos CSS internal </li></h2>
+        <section>
             <p>
-                Quando estuda-se estilos inline, surge a necessidade de melhorar a maneira de criar estilos, porque uma das desvantagem dos estilos inline é a poluição do código html
+                Quando se estuda a aplicação de estilos inline, percebe-se a necessidade de aprimorar as práticas de estilização, uma vez que uma das desvantagens associadas a essa abordagem é a poluição do código HTML. O uso de estilos inline implica na necessidade de atribuir estilos diretamente em cada elemento do documento HTML, o que pode levar a uma manutenção complexa e a uma leitura dificultada do código.
+            </p>
+            <h4>Vantagens dos Estilos Internos</h4>
+            <p>
+                A adoção de estilos internos oferece uma alternativa mais organizada, pois elimina a necessidade de aplicar estilos individualmente a cada linha do código HTML. Em vez disso, os estilos podem ser definidos em uma seção específica dentro do documento, geralmente na tag &lt; head &gt;, utilizando a tag &lt; style &gt;. Essa prática não só melhora a clareza do código, como também facilita a manutenção e a consistência na aplicação dos estilos.
             </p>
             <p>
-                Para efectuar estilo interno, não será mais necessário colocar estilo em cada linha do nosso código html, basta configurar no corpo do nosso projeto, tudo será organizado. 
+                Em suma, para inserir estilos internos em um documento HTML, é necessário criar uma seção de estilo personalizada que centralize as definições de estilo. Essa abordagem não só melhora a organização do código, mas também facilita a manutenção futura, tornando-a uma prática recomendada em projetos de desenvolvimento web.
             </p>
-                Porém esse método de colocar estilo dentro do corpo faz com que o nosso corpo fica mais grande e longo.
-            </p>
+        </section>
+        <section>
+            <h3>Inserção de Estilos Internos em CSS</h3>
             <p>
-                Para inserir qualquer estilo interno, basta criar um estilo personalizada dentro do nosso html.
+                Para implementar estilos internos em um documento HTML, é necessário utilizar a tag &lt; style &gt; dentro da seção &lt;head &gt; do arquivo. Essa abordagem permite que as regras de estilo sejam aplicadas a diferentes elementos da página de forma organizada e centralizada, evitando a repetição de estilos inline.
             </p>
-        </ol>
-        <p>
-            &lt;style&gt; <br>         
-            body { <br>
-                background-color: Nome da cor em ingles.<br>
-                font-family: Tipo de letra<br>
-                fonte-size: tamanho da letra. <br>
-            } <br>
-            h1 {<br>
-                background-color: Nome da cor em ingles.<br>
-                font-family: Tipo de letra<br>
-                fonte-size: tamanho da letra<br>
-            }<br>
-        &lt;/style&gt;<br>
-        </p>
-    </main><br>
+            <iframe src="exemplos.html" frameborder="0"></iframe>
+        </section>
+    </main>
     <footer>
-        <nav id="a">
+        <nav id="link">
             <p>
-                Visite a lista dos temas em HTML
-                <a href="#">aqui</a>✌️ <br>
+                Visite Estilo CSS Inline, 👉 
+                <a href="Inline.html">Clique aqui</a>✌️ <br>
+
+                Visite Estilo CSS External,👉
+                <a href="External.html">Clique aqui</a>✌️ <br>
             
-                Volte no estilo inline, clicando <a href="file:///C:/Users/nsimb/OneDrive/Documents/Meus%20cursos/Full%20stack/Full-stack/Front%20End/HTML/Gustavo%20Guanabara/M%C3%B3dulo%2001/09%20-%20Estilos%20no%20CSS/external.html" target="_blank" rel="next">aqui</a></em></strong>
+                Quer saber sobre as cores em CSS, 👉 <a href="#top" target="_blank">Clique aqui</a>✌️
             </p>
         </nav><br>
-        <nav id="b">
+        <nav id="redes">
             <p>
                 Fale conosco: <br>
-                <a href="https://github.com/" target="_blank"><img src="../Imagens do módulo 01/github.jpg" alt="Foto de github" class="imagem"></a>
+                <a href="https://github.com/" target="_blank"><img src="../Imagens/github.jpg" alt="Foto de github" class="imagem"></a>
 
-                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens do módulo 01/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
+                <a href="http://www.facebook.com.vn/" target="_blank"><img src="../Imagens/facebook.jpg" alt="Foto de facebook" class="imagem"></a>
 
-                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens do módulo 01/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../Imagens/youtube.jpg" alt="Foto de youtube" class="imagem"></a>
             </p>
         </nav>
     </footer>
+    
 </body>
 </html>
